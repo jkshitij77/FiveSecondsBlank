@@ -23,6 +23,15 @@ function App() {
       <div class="aboutus">
         
       </div>
+
+
+      <div class="lol">
+        <div class="testis">
+          Testimonials
+        </div>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt illo temporibus cum, consequuntur officia unde eligendi quibusdam laudantium nemo perspiciatis modi animi, earum voluptas asperiores repudiandae, architecto ullam qui fugiat!</div>
+
+      </div>
     </div>
   );
 }

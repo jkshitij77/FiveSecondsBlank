@@ -35,3 +35,25 @@ h1{
 h3{
   font-size: 5vh;
 }
+
+
+.lol{
+  padding-top: 5%;
+}
+
+.testis{
+  
+  box-sizing: border-box;
+  align-items: center;
+  
+  background-color: aqua;
+  color: #282c34;
+  font-style: bold;
+  border-radius: 50%;
+  width: 300px;
+  height: 100px;
+  border: 3px solid black;
+  float: left;
+  margin-right: 5vh;
+  
+}
