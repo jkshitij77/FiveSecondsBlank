@@ -18,7 +18,12 @@ function App() {
         <a href="#">Contact</a>
       </div>
 
-
+      <div id="call-btn" class="visible-xs">
+        <a class="btn" href="tel:410-602-5008">
+          <span class="glyphicon glyphicon-earphone"></span>
+          410-602-5008
+          </a>
+      </div>
       {/* Header part is here
           We have our banner with the text and logo here */}
       <div class="header">
