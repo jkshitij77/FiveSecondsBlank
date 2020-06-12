@@ -1,15 +1,37 @@
 .body{
-  /* background-color: rgb(73, 241, 7); */
   margin: 0;
 }
 
 .header{
   height: 75vh;
   width: 100vw;
-  background-image: url("ghoulc.jpg");
+  background-image: linear-gradient(to right, red , blue);
+  /* background-image: url("ghoulc.jpg"); */
 }
 
 .insideBanner{
   display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-top: 10vh;
+}
+
+
+.textInsideBanner{
+  display: flex;
   flex-direction: column;
+}
+
+.logo{
+  height: 40vh;
+  width: 40vh;
+  border-radius: 50%;
+}
+
+h1{
+  font-size: 15vh;
+}
+
+h3{
+  font-size: 5vh;
 }
