@@ -30,7 +30,6 @@ cursor: pointer;
   padding-top: 10vh;
 }
 
-
 .textInsideBanner{
   display: flex;
   flex-direction: column;
@@ -49,7 +48,6 @@ h1{
 h3{
   font-size: 5vh;
 }
-
 
 .lol{
   padding-top: 2.5%;
@@ -82,9 +80,39 @@ h3{
 }
   
 .aboutus{
+  /* color: whitesmoke; */
+  /* background-color: rgb(126, 125, 125); */
+  background-color: turquoise;
   margin: 10vh;
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
   align-items: center;
+  padding: 0 5vh 5vh 5vh;
+  line-height: 6vh;
+  font-size: 3vh;
+  text-align: center;
+}
+
+.sidenavbar{
+  margin-top: 25vh;
+  position: fixed;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  margin-left: 90vw;
+}
+
+.sidenavbar a{
+  border-radius: 50px;
+  height: 10vh;
+  width: 10vh;
+  background-color: yellow;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  font-size: 2vh;
+}
+
+.sidenavbar > a {
+  margin: 20px;
 }
