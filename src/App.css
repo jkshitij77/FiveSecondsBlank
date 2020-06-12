@@ -49,16 +49,18 @@ h3{
   font-size: 5vh;
 }
 
-.lol{
-  padding-top: 2.5%;
-  padding-bottom: 2.5%;
-  border: 2px black;
-  box-sizing: border-box;
+.divfortestimonial{
+  padding: 2vh 2vh 2vh 2vh;
   align-items: center;
   background-color: orangered;
-  width: 800px;
-  margin-left: 25%;
-  
+  margin: 10vh;
+  line-height: 6vh;
+  font-size: 3vh;
+  text-align: center;
+  /* Will need flex when we add multiple testimonials */
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
   
 }
 

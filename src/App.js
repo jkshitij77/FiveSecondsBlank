@@ -45,14 +45,13 @@ function App() {
       </div>
 
       
-      <div class="lol">
+      <div class="lol divfortestimonial">
         <h2 class="testis">
           TESTIMONIALS
         </h2>
         <div class="lold">
         Lorem ipsum dolor Lorem ipsum dolorLorem ipsum dolorLorem ipsum dolorLorem ipsum dolorLorem ipsum dolorLorem ipsum dolor
         </div>
-
       </div>
       
     </div>
