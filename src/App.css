@@ -2,6 +2,20 @@
   margin: 0;
 }
 
+.floatingbutton{
+margin-left: 80vw;
+margin-top: 10vh;
+background-color: black;
+padding: 10px 20px 10px 20px;
+color: white;
+position: fixed;
+font-size: 30px;
+font-family: Arial, Helvetica, sans-serif;
+font-weight: bold;
+border-radius: 20px;
+cursor: pointer;
+}
+
 .header{
   height: 75vh;
   width: 100vw;
@@ -55,5 +69,12 @@ h3{
   border: 3px solid black;
   float: left;
   margin-right: 5vh;
+}
   
+.aboutus{
+  margin: 10vh;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  align-items: center;
 }
