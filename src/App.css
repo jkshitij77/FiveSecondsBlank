@@ -2,6 +2,12 @@
   margin: 0;
 }
 
+a{
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
 .floatingbutton{
 margin-left: 80vw;
 margin-top: 10vh;
@@ -61,7 +67,6 @@ h3{
   /* display: flex;
   flex-direction: column;
   align-items: center; */
-  
 }
 
 .testis{
@@ -108,7 +113,8 @@ h3{
   border-radius: 50px;
   height: 10vh;
   width: 10vh;
-  background-color: yellow;
+  background-color: black;
+  color: white;
   justify-content: center;
   display: flex;
   align-items: center;
@@ -118,3 +124,7 @@ h3{
 .sidenavbar > a {
   margin: 20px;
 }
+
+/* https://www.w3schools.com/howto/howto_js_sidenav.asp */
+/* https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_sidenav */
+/* https://www.impactbnd.com/blog/best-contact-us-page-examples */

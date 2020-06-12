@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import {Map, GoogleApiWrapper} from 'google-maps-react';
 
 function gimmethequote(){
   console.log("getting the quote");
@@ -8,7 +9,7 @@ function gimmethequote(){
 function App() {
   return (
     <div class="body">
-
+      {/* <Map google={this.props.google} zoom={8} initialCenter={{lat:47.444, lng:-122.176}}/> */}
       <div class="floatingbutton" onClick={gimmethequote}>Get quote</div>
 
       <div class="sidenavbar">
