@@ -30,10 +30,11 @@ function App() {
       {/* We have the about us section here */}
       <div class="aboutus">
         <h3>ABOUT US</h3>
-        <p>Lorem ipsum dolor Lorem ipsum dolorLorem ipsum dolorLorem ipsum dolorLorem ipsum dolorLorem ipsum dolorLorem ipsum dolor</p>
-        <p>Lorem ipsum dolor Lorem ipsum dolorLorem ipsum dolorLorem ipsum dolorLorem ipsum dolorLorem ipsum dolorLorem ipsum dolor</p>
-        <p>Lorem ipsum dolor Lorem ipsum dolorLorem ipsum dolorLorem ipsum dolorLorem ipsum dolorLorem ipsum dolorLorem ipsum dolor</p>
-          
+        <p>Five Seconds Blank Productions Private Limited is an audio-visual production
+          company based out of Delhi and is expanding operations all over India. We aim to entertain 
+          and inform our audience by producing a variety of relatable content while maintaining an artistic 
+          and creative perspective.
+        </p>
       </div>
 
 
