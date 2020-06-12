@@ -30,7 +30,6 @@ cursor: pointer;
   padding-top: 10vh;
 }
 
-
 .textInsideBanner{
   display: flex;
   flex-direction: column;
@@ -49,7 +48,6 @@ h1{
 h3{
   font-size: 5vh;
 }
-
 
 .lol{
   padding-top: 5%;
@@ -83,4 +81,28 @@ h3{
   line-height: 6vh;
   font-size: 3vh;
   text-align: center;
+}
+
+.sidenavbar{
+  margin-top: 25vh;
+  position: fixed;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  margin-left: 90vw;
+}
+
+.sidenavbar a{
+  border-radius: 50px;
+  height: 10vh;
+  width: 10vh;
+  background-color: yellow;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  font-size: 2vh;
+}
+
+.sidenavbar > a {
+  margin: 20px;
 }

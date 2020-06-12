@@ -11,6 +11,13 @@ function App() {
 
       <div class="floatingbutton" onClick={gimmethequote}>Get quote</div>
 
+      <div class="sidenavbar">
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+      </div>
+
 
       {/* Header part is here
           We have our banner with the text and logo here */}
