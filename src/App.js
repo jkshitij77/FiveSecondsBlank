@@ -9,7 +9,7 @@ function gimmethequote(){
 function App() {
   return (
     <div class="body">
-      {/* <Map google={this.props.google} zoom={8} initialCenter={{lat:47.444, lng:-122.176}}/> */}
+
       <div class="floatingbutton" onClick={gimmethequote}>Get quote</div>
 
       <div class="sidenavbar">
@@ -21,12 +21,15 @@ function App() {
         <a href="#">Contact</a>
       </div>
 
-      {/* <div id="call-btn" class="visible-xs">
-        <a class="btn" href="tel:410-602-5008">
-          <span class="glyphicon glyphicon-earphone"></span>
-          410-602-5008
-          </a>
-      </div> */}
+
+      <div id="call-btn" class="visible-xs">
+        <a class="btn" href="tel:7007937472">
+          <span> 
+            <img src={require("./CALLING_ICON.png")}></img>
+          </span>
+        </a>
+      </div>
+      
       {/* Header part is here
           We have our banner with the text and logo here */}
       <div class="header">
