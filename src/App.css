@@ -108,6 +108,9 @@ h3{
   flex-direction: column;
   margin-left: 90vw;
 }
+#testimonallogo{
+  font-size: 1.5vh;
+}
 
 .sidenavbar a{
   border-radius: 50px;

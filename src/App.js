@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import {Map, GoogleApiWrapper} from 'google-maps-react';
+// import {Map, GoogleApiWrapper} from 'google-maps-react';
 
 function gimmethequote(){
   console.log("getting the quote");
@@ -13,9 +13,11 @@ function App() {
       <div class="floatingbutton" onClick={gimmethequote}>Get quote</div>
 
       <div class="sidenavbar">
-        <a href="#">About</a>
-        <a href="#">Services</a>
+        <a href="#idAboutUs">About</a>
+        <a href="#">Gallery</a>
+        <a href="#idTestimonial" id="testimonallogo">Testimonials</a>
         <a href="#">Clients</a>
+        <a href="#">Services</a>
         <a href="#">Contact</a>
       </div>
 
@@ -41,7 +43,7 @@ function App() {
 
 
       {/* We have the about us section here */}
-      <div class="aboutus">
+      <div class="aboutus" id="idAboutUs">
         <h3>ABOUT US</h3>
         <p>Five Seconds Blank Productions Private Limited is an audio-visual production
           company based out of Delhi and is expanding operations all over India. We aim to entertain 
@@ -51,7 +53,7 @@ function App() {
       </div>
 
       
-      <div class="lol divfortestimonial">
+      <div class="lol divfortestimonial" id="idTestimonial">
         <h2 class="testis">
           TESTIMONIALS
         </h2>
