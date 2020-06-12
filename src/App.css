@@ -52,23 +52,33 @@ h3{
 
 
 .lol{
-  padding-top: 5%;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+  border: 2px black;
+  box-sizing: border-box;
+  align-items: center;
+  background-color: aqua;
+  width: 800px;
+  margin-left: 25%;
+  
+  
 }
 
 .testis{
-  
-  box-sizing: border-box;
+  margin: 10vh;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
   align-items: center;
-  
-  background-color: aqua;
-  color: #282c34;
-  font-style: bold;
-  border-radius: 50%;
-  width: 300px;
-  height: 100px;
-  border: 3px solid black;
-  float: left;
-  margin-right: 5vh;
+  font-size: 5vh;
+}
+
+.lold{
+  margin: 10vh;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  align-items: center;
 }
   
 .aboutus{
