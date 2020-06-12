@@ -8,6 +8,9 @@ a{
   font-weight: bold;
 }
 
+/* #Title{
+  z-index: 1000;
+} */
 .floatingbutton{
 margin-left: 80vw;
 margin-top: 10vh;
@@ -101,12 +104,12 @@ h3{
 }
 
 .sidenavbar{
-  margin-top: 25vh;
+  margin-top: 35vh;
   position: fixed;
   background-color: transparent;
   display: flex;
   flex-direction: column;
-  margin-left: 90vw;
+  margin-left: 92vw;
 }
 #testimonallogo{
   font-size: 1.5vh;
@@ -125,9 +128,20 @@ h3{
 }
 
 .sidenavbar > a {
-  margin: 20px;
+  margin: 10px;
 }
 
+.sidenavbar{
+  cursor: pointer;
+}
+
+.sidenavbar Link{
+  cursor: pointer;
+}
+
+Link{
+  cursor: pointer;
+}
 /* https://www.w3schools.com/howto/howto_js_sidenav.asp */
 /* https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_sidenav */
 /* https://www.impactbnd.com/blog/best-contact-us-page-examples */

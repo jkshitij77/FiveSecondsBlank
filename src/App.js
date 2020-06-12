@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import { Link, animateScroll as scroll } from "react-scroll";
 // import {Map, GoogleApiWrapper} from 'google-maps-react';
 
 function gimmethequote(){
@@ -9,16 +10,23 @@ function gimmethequote(){
 function App() {
   return (
     <div class="body">
+      {/* <Link to="idAboutUs" smooth={true} offset={-70} duration={500}> About</Link> */}
 
       <div class="floatingbutton" onClick={gimmethequote}>Get quote</div>
 
       <div class="sidenavbar">
-        <a href="#idAboutUs">About</a>
+        <Link to="idAboutUs" smooth={true} offset={-70} duration={500}> About</Link>
+        <Link to="idAboutUs" smooth={true} offset={-70} duration={500}> Gallery</Link>
+        <Link to="idTestimonial" smooth={true} offset={-70} duration={500} id="testimonallogo"> Testimonials</Link>
+        <Link to="idAboutUs" smooth={true} offset={-70} duration={500}> Clients</Link>
+        {/* <Link to="idAboutUs" smooth={true} offset={-70} duration={500}> Services</Link> */}
+        <Link to="idAboutUs" smooth={true} offset={-70} duration={500}> Contact</Link>
+        {/* <a href="#idAboutUs">About</a>
         <a href="#">Gallery</a>
         <a href="#idTestimonial" id="testimonallogo">Testimonials</a>
         <a href="#">Clients</a>
         <a href="#">Services</a>
-        <a href="#">Contact</a>
+        <a href="#">Contact</a> */}
       </div>
 
 
@@ -38,7 +46,7 @@ function App() {
             <img src={require("./ghoulc.jpg")} alt="Logo" class="logo"></img>
           </div>
           <div class="textInsideBanner">
-            <h1>Five Seconds Blank</h1>
+            <h1 id="Title">Five Seconds Blank</h1>
             <h3>Feel Scenarios Blend</h3>
           </div>
         </div>
