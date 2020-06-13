@@ -94,14 +94,9 @@ function App() {
         </div>
       </div> */}
 
-      <div id="call-btn" class="visible-xs">
-        <a class="btn" href="tel:7007937472">
-          <span> 
-            <img src={require("./CALLING_ICON.png")} alt="CallingIcon"></img>
-          </span>
-        </a>
-      </div>
-
+      {/* Just trying the contact component right here
+      Have something to redirect us to the contact component 
+      Add the phone call thign to that component*/}
       <Contact />
       
     </div>

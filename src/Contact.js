@@ -14,12 +14,14 @@ class Contact extends Component {
             <div class="body">
                 <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet"></link>
                 
+                {/* Upper part fo the page. Has the banner */}
                 <div>
                     <img src={require("./conus.png")} class="contact_banner"></img>
                 </div>
                 
-                <div class="details" >
-                    Fill This Form Below
+                {/* Lower part of the contact page */}
+                {/* <div class="details" >
+                    <p>Fill This <br />Form Below</p>
                     <div class="formalignleft">
                         <form>
                             <label class="labelfont">
@@ -40,23 +42,52 @@ class Contact extends Component {
                     </div>
 
                     <div class="formalignright">
-                        <h2>Contact No.: 099997 83321</h2>
-                        <h2>Address: F - 20/A, Hauz Khas Enclave
+                    <p>Contact No.: 099997 83321</p>
+                        <p>Address: F - 20/A, Hauz Khas Enclave
                             New Delhi, Delhi 110016
                             India
-                        </h2>
+                        </p>
                     </div>
+                </div> */}
 
-                    {/* Kshitij bhai yeh dekhlo*/}
-                    {/*<h2 class="normalconts">
-            <h2>Contact No.: 099997 83321</h2>
-            <h2>Address: F - 20/A, Hauz Khas Enclave
-                New Delhi, Delhi 110016
-                India
-            </h2>
- 
-          </h2>*/}
+                <div class="uselessContainer">
+                    <div class="lowercontainer">
+                        <div class="left">
+                            <form>
+                                <label class="labelfont">
+                                    Name:
+                                    <input type="text" name="name" />
+                                </label><br />
 
+                                <label class="labelfont">
+                                    Email:
+                                    <input type="text" name="name" />
+                                </label> <br />
+                                <label class="labelfont">
+                                    Thots:
+                                    <textarea type="text" name="name" />
+                                </label> <br />
+                                <input type="submit" value="Submit" />
+                            </form>
+                        </div>
+                        <div class="right">
+                            <p>Contact No.: 099997 83321</p>
+                            <p>Address: F - 20/A, Hauz Khas Enclave
+                                New Delhi, Delhi 110016
+                                India
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                {/* Button for calling and with added calling functionality */}
+                <div id="call-btn" class="visible-xs">
+                    <a class="btn" href="tel:7007937472">
+                    <span> 
+                        <img src={require("./CALLING_ICON.png")} alt="CallingIcon"></img>
+                    </span>
+                    </a>
                 </div>
             </div>
         );
