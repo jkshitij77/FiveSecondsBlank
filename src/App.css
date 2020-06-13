@@ -1,5 +1,8 @@
 .body{
   margin: 0;
+  padding-bottom: 50px;
+  /* TODO: Remove this  */
+
 }
 
 a{
@@ -25,7 +28,9 @@ cursor: pointer;
 .header{
   height: 75vh;
   width: 100vw;
-  background-image: linear-gradient(to right, red , rgb(243, 132, 132));
+  background-image: linear-gradient(to right, rgb(205, 94, 209), rgb(255, 68, 68));
+  /* rgb(238, 132, 132) */
+  /* rgb(240, 74, 218) */
   /* filter: saturate(70%); */
 }
 

@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     font-weight: 400;
+    
   }
    
   .contact_banner{
@@ -67,18 +68,20 @@
   .left{
     width: 37vw;
     height: 70vh;
-    border-radius: 20px;
-    background-image: linear-gradient(90deg,#e82661,#4b1942,#e82661);
+    border-radius: 50px;
+    background-image: linear-gradient(90deg,#f85888,#9c378a);
     display: flex;
     justify-content: center;
     line-height: 50px;
   }
 
+  /* Left and right have different gradients right now */
+  /* Check which one looks better right now */
   .right{
     width: 37vw;
     height: 70vh;
-    border-radius: 20px;
-    background-image: linear-gradient(90deg,#e82661,#4b1942,#e82661);
+    border-radius: 50px;
+    background-image: linear-gradient(90deg,#e82661,#4b1942);
     display: flex;
     justify-content: center;
   }
@@ -86,4 +89,5 @@
   .uselessContainer{
     display: flex;
     justify-content: center;
+    padding-bottom: 50px;
   }

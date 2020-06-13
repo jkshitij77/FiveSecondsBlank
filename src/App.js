@@ -43,7 +43,7 @@ function App() {
       <div class="header">
         <div class="insideBanner">
           <div class="pictureInsideBanner">
-            <img src={require("./ghoulc.jpg")} alt="Logo" class="logo"></img>
+            <img src={require("./logo.png")} alt="Logo" class="logo"></img>
           </div>
           <div class="textInsideBanner">
             <h1 id="Title">Five Seconds Blank</h1>
