@@ -1,0 +1,51 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-weight: 400;
+  }
+   
+  .contact_banner{
+    border-radius: 5vh;
+    display: block;
+    margin-top: 10vh;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+   
+  }
+  .details{
+    color: white;
+    font-family: 'Cinzel', serif;
+    padding: 2vh 0vh 0vh 0vh;
+    align-items: center;
+    background-image: linear-gradient(-120deg,#e82661,#4b1942,#e82661);
+    margin-top: 10vh;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    font-size: 4vh;
+    text-align: left;
+    padding-left: 5vw;
+    border-radius: 5vh;
+
+
+    display: flex;
+    flex-direction: row;
+    
+  }
+  .labelfont{
+    font-size: 3vh;
+    margin-right: 0;
+  }  
+
+  .formalignleft{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      /* justify-content: left; */
+      padding-left: 3vw;
+  }
+
+  .formalignleft > label {
+    margin: 10px;
+  }

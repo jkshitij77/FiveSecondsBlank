@@ -8,12 +8,9 @@ a{
   font-weight: bold;
 }
 
-/* #Title{
-  z-index: 1000;
-} */
 .floatingbutton{
-margin-left: 80vw;
-margin-top: 10vh;
+margin-left: 85vw;
+margin-top: 5vh;
 background-color: black;
 padding: 10px 20px 10px 20px;
 color: white;
@@ -28,8 +25,8 @@ cursor: pointer;
 .header{
   height: 75vh;
   width: 100vw;
-  background-image: linear-gradient(to right, red , blue);
-  /* background-image: url("ghoulc.jpg"); */
+  background-image: linear-gradient(to right, red , rgb(243, 132, 132));
+  /* filter: saturate(70%); */
 }
 
 .insideBanner{
@@ -76,7 +73,6 @@ h3{
   margin: 10vh;
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
   align-items: center;
   font-size: 5vh;
 }
@@ -85,19 +81,16 @@ h3{
   margin: 10vh;
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
   align-items: center;
 }
   
 .aboutus{
-  /* color: whitesmoke; */
-  /* background-color: rgb(126, 125, 125); */
   background-color: turquoise;
   margin: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 5vh 5vh 5vh;
+  padding: 5vh 5vh 5vh 5vh;
   line-height: 6vh;
   font-size: 3vh;
   text-align: center;
@@ -142,6 +135,25 @@ h3{
 Link{
   cursor: pointer;
 }
+.gallerycontainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+}
+.gallery{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  width: 30vw;
+  cursor: pointer;
+}
+
+ReactCompareSlider{
+  object-fit: cover;
+}
 /* https://www.w3schools.com/howto/howto_js_sidenav.asp */
 /* https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_sidenav */
 /* https://www.impactbnd.com/blog/best-contact-us-page-examples */
+

@@ -1,10 +1,16 @@
 import React from 'react';
 import './App.css';
 import { Link, animateScroll as scroll } from "react-scroll";
+import Contact from './Contact.js';
+import { ReactCompareSlider, ReactCompareSliderImage } from 'react-compare-slider';
 // import {Map, GoogleApiWrapper} from 'google-maps-react';
 
 function gimmethequote(){
   console.log("getting the quote");
+}
+
+function toGallery(){
+  console.log("Redirect to gallery");
 }
 
 function App() {
@@ -13,30 +19,24 @@ function App() {
       {/* <Link to="idAboutUs" smooth={true} offset={-70} duration={500}> About</Link> */}
 
       <div class="floatingbutton" onClick={gimmethequote}>Get quote</div>
-
       <div class="sidenavbar">
         <Link to="idAboutUs" smooth={true} offset={-70} duration={500}> About</Link>
         <Link to="idAboutUs" smooth={true} offset={-70} duration={500}> Gallery</Link>
         <Link to="idTestimonial" smooth={true} offset={-70} duration={500} id="testimonallogo"> Testimonials</Link>
         <Link to="idAboutUs" smooth={true} offset={-70} duration={500}> Clients</Link>
-        {/* <Link to="idAboutUs" smooth={true} offset={-70} duration={500}> Services</Link> */}
         <Link to="idAboutUs" smooth={true} offset={-70} duration={500}> Contact</Link>
+      </div>
+
+        {/* <Link to="idAboutUs" smooth={true} offset={-70} duration={500}> Services</Link> */}
         {/* <a href="#idAboutUs">About</a>
         <a href="#">Gallery</a>
         <a href="#idTestimonial" id="testimonallogo">Testimonials</a>
         <a href="#">Clients</a>
         <a href="#">Services</a>
         <a href="#">Contact</a> */}
-      </div>
 
 
-      <div id="call-btn" class="visible-xs">
-        <a class="btn" href="tel:7007937472">
-          <span> 
-            <img src={require("./CALLING_ICON.png")}></img>
-          </span>
-        </a>
-      </div>
+      
       
       {/* Header part is here
           We have our banner with the text and logo here */}
@@ -63,6 +63,18 @@ function App() {
         </p>
       </div>
 
+      {/* We have the gallery section here */}
+      <div class="gallerycontainer">
+        <div class="gallery" id="idGallery">
+          <ReactCompareSlider
+            itemOne={<ReactCompareSliderImage src={require("./10 copy.jpg")}  alt="Image one" />}
+            itemTwo={<ReactCompareSliderImage src={require("./14 copy.jpg")} alt="Image two" />}
+            position={20}
+          />
+        </div>
+        {/* Have a button that takes us to gallery. Can not have the same functionality with the image */}
+        {/* onClick={toGallery} */}
+      </div>
       
       <div class="lol divfortestimonial" id="idTestimonial">
         <h2 class="testis">
@@ -72,6 +84,25 @@ function App() {
         Lorem ipsum dolor Lorem ipsum dolorLorem ipsum dolorLorem ipsum dolorLorem ipsum dolorLorem ipsum dolorLorem ipsum dolor
         </div>
       </div>
+
+      {/* <div class="img-comp-container">
+        <div class="img-comp-img">
+          <img src={require('./ghoulc.jpg')} width="300" height="200" />
+        </div>
+        <div class="img-comp-img img-comp-overlay">
+          <img src={require('./CALLING_ICON.png')} width="300" height="200" />
+        </div>
+      </div> */}
+
+      <div id="call-btn" class="visible-xs">
+        <a class="btn" href="tel:7007937472">
+          <span> 
+            <img src={require("./CALLING_ICON.png")} alt="CallingIcon"></img>
+          </span>
+        </a>
+      </div>
+
+      <Contact />
       
     </div>
   );
