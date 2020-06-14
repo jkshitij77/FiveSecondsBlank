@@ -64,18 +64,20 @@ class Contact extends Component {
                                     <input type="text" name="name" />
                                 </label> <br />
                                 <label class="labelfont">
-                                    Thots:
+                                    Ideas :
                                     <textarea type="text" name="name" />
                                 </label> <br />
                                 <input type="submit" value="Submit" />
                             </form>
                         </div>
                         <div class="right">
-                            <p>Contact No.: 099997 83321</p>
-                            <p>Address: F - 20/A, Hauz Khas Enclave
+                            <h2><p>Address:</p> <p class="xxfloat">F - 20/A, Hauz Khas Enclave
                                 New Delhi, Delhi 110016
-                                India
-                            </p>
+                                India</p> <br />
+                                <p>Contact No:</p> <p class="xxfloat">099997 83321</p>
+                            </h2>
+                            
+                        
                         </div>
                     </div>
                 </div>
