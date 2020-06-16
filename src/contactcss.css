@@ -119,3 +119,38 @@
   .xxfloat{
     font-size: smaller;
   }
+
+  /* Css for meettheteam */
+  .uselessContainer2{
+    display: flex;
+    justify-content: center;    
+  }
+
+  .rowthing{
+    width: 80vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .rowthing img{
+    width: 40vw;
+    height: 60vh;
+  }
+
+  .rowthing figure img {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    opacity: 1;
+  }
+  .rowthing figure img:hover {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+    opacity: .5;
+  }
+
+  figure{
+    overflow: hidden;
+  }

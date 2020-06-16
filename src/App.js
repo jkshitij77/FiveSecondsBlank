@@ -3,6 +3,7 @@ import './App.css';
 import { Link, animateScroll as scroll } from "react-scroll";
 import Contact from './Contact.js';
 import { ReactCompareSlider, ReactCompareSliderImage } from 'react-compare-slider';
+import Meettheteam from './Meettheteam';
 // import {Map, GoogleApiWrapper} from 'google-maps-react';
 
 function gimmethequote(){
@@ -98,6 +99,7 @@ function App() {
       Have something to redirect us to the contact component 
       Add the phone call thign to that component*/}
       <Contact />
+      <Meettheteam />
       
     </div>
   );
