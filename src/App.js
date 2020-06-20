@@ -23,32 +23,28 @@ function App() {
       <div class="sidenavbar">
         {/* <Link to="idAboutUs" smooth={true} offset={-70} duration={500}> About</Link> */}
         <Link to="idAboutUs" smooth={true} offset={-70} duration={500}> <img src={require("./aboutusimg.png")}></img></Link>
-        <Link to="idAboutUs" smooth={true} offset={-70} duration={500}> Gallery</Link>
-        <Link to="idTestimonial" smooth={true} offset={-70} duration={500} id="testimonallogo"> Testimonials</Link>
-        <Link to="idAboutUs" smooth={true} offset={-70} duration={500}> Clients</Link>
-        <Link to="idAboutUs" smooth={true} offset={-70} duration={500}> Contact</Link>
-      </div>
-
-        {/* <Link to="idAboutUs" smooth={true} offset={-70} duration={500}> Services</Link> */}
-        {/* <a href="#idAboutUs">About</a>
-        <a href="#">Gallery</a>
-        <a href="#idTestimonial" id="testimonallogo">Testimonials</a>
-        <a href="#">Clients</a>
-        <a href="#">Services</a>
-        <a href="#">Contact</a> */}
-
-
-      
+        <Link to="idGallery" smooth={true} offset={-70} duration={500}> <img src={require("./gallery.png")}></img></Link>
+        <Link to="idClient" smooth={true} offset={-70} duration={500}> <img src={require("./customer-care.png")}></img></Link>
+        <Link to="idContact" smooth={true} offset={-70} duration={500}> <img src={require("./contactbruh.png")}></img></Link>
+      </div>      
       
       {/* Header part is here
           We have our banner with the text and logo here */}
       <div class="header">
         <div class="insideBanner">
+          <div class="logosforside">
+            <a href="https://www.facebook.com/fivesecondsblank" target="_blank"><img src={require('./facebook.png')}></img></a>
+            <a href="https://instagram.com/fivesecondsblank?igshid=1d0v0u5wn51h8" target="_blank"><img src={require('./instagram.png')}></img></a>
+            <a href="http://www.google.com" target="_blank"><img src={require('./10 copy.jpg')}></img></a>
+            <a href="http://www.google.com" target="_blank"><img src={require('./10 copy.jpg')}></img></a>
+          </div>
           <div class="pictureInsideBanner">
             <img src={require("./logo.png")} alt="Logo" class="logo"></img>
           </div>
           <div class="textInsideBanner">
-            <h1 id="Title">Five Seconds Blank</h1>
+            <h1 id="Title">Five <br class="brclass"/> Seconds <br class="brclass"/> Blank</h1>
+            {/* <h1 id="Title">Seconds</h1>
+            <h1 id="Title">Blank</h1> */}
             <h3>Feel Scenarios Blend</h3>
           </div>
         </div>

@@ -7,6 +7,10 @@
 
 }
 
+.brclass{
+  height: 10vh;
+}
+
 a{
   text-decoration: none;
   font-family: Arial, Helvetica, sans-serif;
@@ -44,6 +48,23 @@ cursor: pointer;
   flex-direction: row;
   justify-content: space-evenly;
   padding-top: 10vh;
+}
+
+.logosforside{
+  padding-top: 25vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.logosforside img{
+  border-radius: 100px;
+  height: 50px;
+  width: 50px;
+} 
+
+.logosforside > a {
+  margin: 10px;
 }
 
 .textInsideBanner{
