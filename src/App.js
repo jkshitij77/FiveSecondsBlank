@@ -57,12 +57,25 @@ function App() {
 
       {/* We have the about us section here */}
       <div class="aboutus" id="idAboutUs">
-        <h3>ABOUT US</h3>
+        <h3 class="dicked">ABOUT US</h3><br />
         <p>Five Seconds Blank Productions Private Limited is an audio-visual production
           company based out of Delhi and is expanding operations all over India. We aim to entertain 
           and inform our audience by producing a variety of relatable content while maintaining an artistic 
           and creative perspective.
         </p>
+        <br />
+        <div class="dabbasand">
+        <h3 class="lildabba">
+          <img src={require("./TGC.png")} alt="Logo" class="logo" ></img> <br />
+          <br /> San.D <br />
+        <div class="lulli">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, maxime, veniam adipisci odio ab magni, aspernatur pariatur obcaecati reprehenderit modi eos! Modi soluta doloremque vitae mollitia natus minima voluptatum id?laudantium, minus dolore!</div>
+        </h3>
+        <h3 class="lildabba">
+        <img src={require("./TGC.png")} alt="Logo" class="logo" ></img> <br />
+        <br /> The Groovin' Cat <br />
+        <p class="lulli">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit quibusdam debitis porro, magnam ex at corporis repellendus! Provident, mollitia. Maxime debitis distinctio aspernatur voluptas eius labore mollitia laudantium, minus dolore!</p>
+        </h3>
+        </div>
       </div>
 
       {/* We have the gallery section here */}
