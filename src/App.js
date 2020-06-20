@@ -62,7 +62,7 @@ function App() {
         <br />
         <div class="dabbasand">
         <h3 class="lildabba">
-          <img src={require("./TGC.png")} alt="Logo" class="logo" ></img> <br />
+          <img src={require("./TGC.png")} alt="Logo" class="logo" width="auto" ></img> <br />
           <br /> San.D <br />
         <div class="lulli">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, maxime, veniam adipisci odio ab magni, aspernatur pariatur obcaecati reprehenderit modi eos! Modi soluta doloremque vitae mollitia natus minima voluptatum id?laudantium, minus dolore!</div>
         </h3>
