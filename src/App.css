@@ -32,7 +32,7 @@ cursor: pointer;
 }
 
 .header{
-  height: 75vh;
+  height: 85vh;
   width: 100vw;
   /* background-image: linear-gradient(to right, rgb(205, 94, 209), rgb(255, 68, 68)); */
   /* background-color: #FED3EB; */
@@ -212,6 +212,43 @@ Link{
   margin-right: 5vh ;
   text-align: center;
 }
+.main_foot{
+  background-color: rgb(14, 14, 14);
+  color: white;
+  font-size: medium;
+  padding-left: 30vh;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  padding-top: 7vh;
+  height: 100vh;
+  align-content: center;
+}
+ul{
+  list-style: none;
+  
+  text-align: left;
+}
+.foot_head{
+  padding-left: 15vh;
+}
+.list_foot_color{
+  color: rgb(16, 255, 255);
+
+}
+.foot{
+  
+  flex: 1;
+}
+footer{
+  margin-bottom: 0;
+}
+
+
+.lilfootie{
+  min-height: 90vh;
+}
+
+
 
 ReactCompareSlider{
   object-fit: cover;

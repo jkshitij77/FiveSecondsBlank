@@ -33,10 +33,10 @@ function App() {
       <div class="header">
         <div class="insideBanner">
           <div class="logosforside">
-            <a href="https://www.facebook.com/fivesecondsblank" target="_blank"><img src={require('./facebook.png')}></img></a>
-            <a href="https://instagram.com/fivesecondsblank?igshid=1d0v0u5wn51h8" target="_blank"><img src={require('./instagram.png')}></img></a>
-            <a href="http://www.google.com" target="_blank"><img src={require('./10 copy.jpg')}></img></a>
-            <a href="http://www.google.com" target="_blank"><img src={require('./10 copy.jpg')}></img></a>
+            <a href="https://www.facebook.com/fivesecondsblank" target="_blank" rel="noopener noreferrer"><img src={require('./facebook.png')}></img></a>
+            <a href="https://instagram.com/fivesecondsblank?igshid=1d0v0u5wn51h8" target="_blank" rel="noopener noreferrer"><img src={require('./instagram.png')}></img></a>
+            <a href="http://www.google.com" target="_blank" rel="noopener noreferrer"><img src={require('./10 copy.jpg')}></img></a>
+            <a href="http://www.google.com" target="_blank" rel="noopener noreferrer"><img src={require('./10 copy.jpg')}></img></a>
           </div>
           <div class="pictureInsideBanner">
             <img src={require("./logo.png")} alt="Logo" class="logo"></img>
@@ -110,6 +110,53 @@ function App() {
       Add the phone call thign to that component*/}
       <Contact />
       <Meettheteam />
+
+      {/* FOOTER BEGINS FROM HERE */}
+      <body>
+        
+          <section class="lilfootie">
+      
+                <div class="foot"></div>
+                  <footer>
+                      <div class="main_foot">
+                        <div claas="foot_head">
+                        <h3>Quick Links</h3><br />
+                        <ul>
+                          <li><a class="list_foot_color" href="#">Home</a></li> <br />
+                          <li><a class="list_foot_color" href="#">About</a></li> <br />
+                          <li><a class="list_foot_color" href="#">Gallery</a></li> <br />
+                          <li><a class="list_foot_color" href="#">Clients</a></li><br />
+                        </ul>
+                        </div>
+                        <div class="foot_head">
+                        <h3>Social Networks</h3> <br />
+                        <ul>
+                          <li><a class="list_foot_color" href="https://instagram.com/fivesecondsblank?igshid=1d0v0u5wn51h8" target="_blank" rel="noopener noreferrer" >Instagram</a></li><br />
+                          <li><a class="list_foot_color" href="https://www.facebook.com/fivesecondsblank" target="_blank" rel="noopener noreferrer">Facebook</a></li><br />
+                          <li><a class="list_foot_color" href="http://www.google.com" target="_blank" rel="noopener noreferrer">Youtube</a></li><br />
+                          <li><a class="list_foot_color" href="http://www.google.com" target="_blank" rel="noopener noreferrer">Linkedin</a></li><br />
+                        </ul>
+                        </div>
+                        <div class="foot_head">
+                        <h3>Contact</h3>
+                        <p><h4>Address:</h4> <br />
+                        F - 20/A, Hauz Khas Enclave New Delhi, Delhi 110016 India </p><br />
+                          <h4>Phone: </h4> <br />
+                          <p>+91 7755000005</p>
+                          <br />
+                          <h4>Email:</h4> <br />
+                          <p>lol@gmail.lol.com</p>
+                          <br />
+                        </div>
+                      </div>
+
+
+
+                  </footer>
+            </section>       
+      </body>
+
+      {/* Footer ends here       */}
       
     </div>
   );
