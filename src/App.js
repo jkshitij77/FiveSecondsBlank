@@ -23,10 +23,9 @@ function App() {
       <div class="sidenavbar">
         {/* <Link to="idAboutUs" smooth={true} offset={-70} duration={500}> About</Link> */}
         <Link to="idAboutUs" smooth={true} offset={-70} duration={500}> <img src={require("./aboutusimg.png")}></img></Link>
-        <Link to="idAboutUs" smooth={true} offset={-70} duration={500}> Gallery</Link>
-        {/* <Link to="idTestimonial" smooth={true} offset={-70} duration={500} id="testimonallogo"> Testimonials</Link> */}
-        <Link to="idAboutUs" smooth={true} offset={-70} duration={500}> Clients</Link>
-        <Link to="idAboutUs" smooth={true} offset={-70} duration={500}> Contact</Link>
+        <Link to="idGallery" smooth={true} offset={-70} duration={500}> <img src={require("./gallery.png")}></img></Link>
+        <Link to="idClient" smooth={true} offset={-70} duration={500}> <img src={require("./customer-care.png")}></img></Link>
+        <Link to="idContact" smooth={true} offset={-70} duration={500}> <img src={require("./contactbruh.png")}></img></Link>
       </div>      
       
       {/* Header part is here
@@ -43,7 +42,9 @@ function App() {
             <img src={require("./logo.png")} alt="Logo" class="logo"></img>
           </div>
           <div class="textInsideBanner">
-            <h1 id="Title">Five Seconds Blank</h1>
+            <h1 id="Title">Five <br class="brclass"/> Seconds <br class="brclass"/> Blank</h1>
+            {/* <h1 id="Title">Seconds</h1>
+            <h1 id="Title">Blank</h1> */}
             <h3>Feel Scenarios Blend</h3>
           </div>
         </div>
