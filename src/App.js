@@ -21,7 +21,8 @@ function App() {
 
       <div class="floatingbutton" onClick={gimmethequote}>Get quote</div>
       <div class="sidenavbar">
-        <Link to="idAboutUs" smooth={true} offset={-70} duration={500}> About</Link>
+        {/* <Link to="idAboutUs" smooth={true} offset={-70} duration={500}> About</Link> */}
+        <Link to="idAboutUs" smooth={true} offset={-70} duration={500}> <img src={require("./aboutusimg.png")}></img></Link>
         <Link to="idAboutUs" smooth={true} offset={-70} duration={500}> Gallery</Link>
         <Link to="idTestimonial" smooth={true} offset={-70} duration={500} id="testimonallogo"> Testimonials</Link>
         <Link to="idAboutUs" smooth={true} offset={-70} duration={500}> Clients</Link>

@@ -1,5 +1,6 @@
 .body{
   margin: 0;
+  background-color: #452F71;
   padding-bottom: 50px;
   /* TODO: Remove this  */
 
@@ -28,7 +29,10 @@ cursor: pointer;
 .header{
   height: 75vh;
   width: 100vw;
-  background-image: linear-gradient(to right, rgb(205, 94, 209), rgb(255, 68, 68));
+  /* background-image: linear-gradient(to right, rgb(205, 94, 209), rgb(255, 68, 68)); */
+  /* background-color: #FED3EB; */
+  background-color: #A0BBEC;
+
   /* rgb(238, 132, 132) */
   /* rgb(240, 74, 218) */
   /* filter: saturate(70%); */
@@ -117,12 +121,18 @@ h3{
   border-radius: 50px;
   height: 10vh;
   width: 10vh;
-  background-color: black;
-  color: white;
-  justify-content: center;
+  background-color: #FED3EB;
+  color: black;
+justify-content: center;
   display: flex;
   align-items: center;
   font-size: 2vh;
+}
+
+.sidenavbar img{
+  border-radius: 50px;
+  height: 8vh;
+  width: 8vw;
 }
 
 .sidenavbar > a {
