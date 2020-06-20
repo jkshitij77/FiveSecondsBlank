@@ -1,156 +1,156 @@
 *{
-    padding: 0;
-    margin: 0;
-    font-weight: 400;
+  padding: 0;
+  margin: 0;
+  font-weight: 400;
     
-  }
-   
-  .contact_banner{
-    border-radius: 5vh;
-    display: block;
-    margin-top: 10vh;
-    margin-left: auto;
-    margin-right: auto;
-    width: 80vw;
-   
-  }
-  .details{
-    color: white;
-    font-family: 'Cinzel', serif;
-    padding: 2vh 0vh 0vh 0vh;
-    align-items: center;
-    background-image: linear-gradient(-120deg,#e82661,#4b1942,#e82661);
-    margin-top: 10vh;
-    margin-left: auto;
-    margin-right: auto;
-    width: 80vw;
-    font-size: 4vh;
-    text-align: left;
-    padding-left: 5vw;
-    border-radius: 5vh;
+}
+  
+.contact_banner{
+  border-radius: 5vh;
+  display: block;
+  margin-top: 10vh;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80vw;
+  
+}
+.details{
+  color: white;
+  font-family: 'Cinzel', serif;
+  padding: 2vh 0vh 0vh 0vh;
+  align-items: center;
+  background-image: linear-gradient(-120deg,#e82661,#4b1942,#e82661);
+  margin-top: 10vh;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80vw;
+  font-size: 4vh;
+  text-align: left;
+  padding-left: 5vw;
+  border-radius: 5vh;
 
 
+  display: flex;
+  flex-direction: row;
+  
+}
+.labelfont{
+  font-size: 3vh;
+  margin-right: 0;
+}  
+
+.formalignleft{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: flex-start;
+    /* justify-content: left; */
+    padding-left: 3vw;
+}
+
+.formalignleft > label {
+  margin: 10px;
+}
+
+.lowercontainer{
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 80vw;
+  height: 50vh;
+  /* background-color: red; */
+  align-content: center;
+  
+  
+  color: white;
+  font-family: 'Cinzel', serif;
+
+}
+
+.left{
+  width: 37vw;
+  height: 70vh;
+  border-radius: 50px;
+  background-image: linear-gradient(-175deg,#f85888,#9c378a);
+  /* display: flex;
+  justify-content: center;
+  align-content: center; */
+  line-height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Left and right have different gradients right now */
+/* Check which one looks better right now */
+.right{
+  /* width: 37vw;
+  height: 70vh;
+  border-radius: 50px;
+  background-image: linear-gradient(90deg,#e82661,#850e6f);
+  line-height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+    */
+  font-size: 14px;
+  width: 37vw;
+  height: 70vh;
+  border-radius: 50px;
+  background-image: linear-gradient(-175deg,#f85888,#a3318e);
+  /* display: flex;
+  justify-content: center;
+  align-content: center; */
+  line-height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
     
-  }
-  .labelfont{
-    font-size: 3vh;
-    margin-right: 0;
-  }  
+}
 
-  .formalignleft{
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      /* justify-content: left; */
-      padding-left: 3vw;
-  }
+.uselessContainer{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+  
+}
 
-  .formalignleft > label {
-    margin: 10px;
-  }
+.xxfloat{
+  font-size: smaller;
+}
 
-  .lowercontainer{
-    margin-top: 30px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 80vw;
-    height: 50vh;
-    /* background-color: red; */
-    align-content: center;
-    
-    
-    color: white;
-    font-family: 'Cinzel', serif;
+/* Css for meettheteam */
+.uselessContainer2{
+  display: flex;
+  justify-content: center;    
+}
 
-  }
+.rowthing{
+  width: 80vw;
+  height: 60vh;
+  display: flex;
+  flex-direction: row;
+}
 
-  .left{
-    width: 37vw;
-    height: 70vh;
-    border-radius: 50px;
-    background-image: linear-gradient(-175deg,#f85888,#9c378a);
-    /* display: flex;
-    justify-content: center;
-    align-content: center; */
-    line-height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+.rowthing img{
+  width: 40vw;
+  height: 60vh;
+}
 
-  /* Left and right have different gradients right now */
-  /* Check which one looks better right now */
-  .right{
-    /* width: 37vw;
-    height: 70vh;
-    border-radius: 50px;
-    background-image: linear-gradient(90deg,#e82661,#850e6f);
-    line-height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-     */
-    font-size: 14px;
-    width: 37vw;
-    height: 70vh;
-    border-radius: 50px;
-    background-image: linear-gradient(-175deg,#f85888,#a3318e);
-    /* display: flex;
-    justify-content: center;
-    align-content: center; */
-    line-height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.rowthing figure img {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+  opacity: 1;
+}
+.rowthing figure img:hover {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+  opacity: .5;
+}
 
-     
-  }
-
-  .uselessContainer{
-    display: flex;
-    justify-content: center;
-    padding-bottom: 50px;
-    
-  }
-
-  .xxfloat{
-    font-size: smaller;
-  }
-
-  /* Css for meettheteam */
-  .uselessContainer2{
-    display: flex;
-    justify-content: center;    
-  }
-
-  .rowthing{
-    width: 80vw;
-    height: 60vh;
-    display: flex;
-    flex-direction: row;
-  }
-
-  .rowthing img{
-    width: 40vw;
-    height: 60vh;
-  }
-
-  .rowthing figure img {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    -webkit-transition: .3s ease-in-out;
-    transition: .3s ease-in-out;
-    opacity: 1;
-  }
-  .rowthing figure img:hover {
-    -webkit-transform: scale(1.3);
-    transform: scale(1.3);
-    opacity: .5;
-  }
-
-  figure{
-    overflow: hidden;
-  }
+figure{
+  overflow: hidden;
+}
