@@ -24,18 +24,10 @@ function toGallery(){
 function App() {
   return (
     <div class="body">
-      <FontAwesomeIcon icon={faCoffee} size="3x" color="red"/>
-
-      {/* <script src="https://use.fontawesome.com/f49e083040.js"></script>
-      <script src="https://kit.fontawesome.com/9f3fe80a0d.js" crossorigin="anonymous"></script> */}
-
-
-
-      {/* <Link to="idAboutUs" smooth={true} offset={-70} duration={500}> About</Link> */}
+      {/* <FontAwesomeIcon icon={faCoffee} size="3x" color="red"/> */}
 
       <div class="floatingbutton" onClick={gimmethequote}>Get quote</div>
       <div class="sidenavbar">
-        {/* <Link to="idAboutUs" smooth={true} offset={-70} duration={500}> About</Link> */}
         <Link to="idAboutUs" smooth={true} offset={-70} duration={500}> <img id="dangbruh"src={require("./aboutusimg.png")}></img></Link>
         <Link to="idGallery" smooth={true} offset={-70} duration={500}> <img src={require("./gallery.png")}></img></Link>
         <Link to="idClient" smooth={true} offset={-70} duration={500}> <img src={require("./customer-care.png")}></img></Link>
@@ -44,7 +36,7 @@ function App() {
       
       {/* Header part is here
           We have our banner with the text and logo here */}
-      <div class="header">
+      <div class="header" id="idBanner">
         <div class="insideBanner">
           <div class="logosforside">
             <a href="https://www.facebook.com/fivesecondsblank" target="_blank" rel="noopener noreferrer"><img src={require('./facebook.png')}></img></a>
@@ -57,8 +49,6 @@ function App() {
           </div>
           <div class="textInsideBanner">
             <h1 id="Title">Five <br class="brclass"/> Seconds <br class="brclass"/> Blank</h1>
-            {/* <h1 id="Title">Seconds</h1>
-            <h1 id="Title">Blank</h1> */}
             <h3>Feel Scenarios Blend</h3>
           </div>
         </div>
@@ -89,7 +79,7 @@ function App() {
       </div>
 
       {/* We have the gallery section here */}
-      <div class="gallerycontainer">
+      {/* <div class="gallerycontainer">
         <div class="gallery" id="idGallery">
           <ReactCompareSlider
             itemOne={<ReactCompareSliderImage src={require("./10 copy.jpg")}  alt="Image one" />}
@@ -97,9 +87,9 @@ function App() {
             position={20}
           />
         </div>
-        {/* Have a button that takes us to gallery. Can not have the same functionality with the image */}
+      </div> */}
+      {/* Have a button that takes us to gallery. Can not have the same functionality with the image */}
         {/* onClick={toGallery} */}
-      </div>
       
       <div class="lol divfortestimonial" id="idTestimonial">
         <h2 class="testis">
@@ -109,15 +99,6 @@ function App() {
         Lorem ipsum dolor Lorem ipsum dolorLorem ipsum dolorLorem ipsum dolorLorem ipsum dolorLorem ipsum dolorLorem ipsum dolor
         </div>
       </div>
-
-      {/* <div class="img-comp-container">
-        <div class="img-comp-img">
-          <img src={require('./ghoulc.jpg')} width="300" height="200" />
-        </div>
-        <div class="img-comp-img img-comp-overlay">
-          <img src={require('./CALLING_ICON.png')} width="300" height="200" />
-        </div>
-      </div> */}
 
       {/* Just trying the contact component right here
       Have something to redirect us to the contact component 
@@ -130,7 +111,7 @@ function App() {
       </div>
 
       {/* Section for gallery */}
-      <div class="gallerySection">
+      <div class="gallerySection" id="idGallery">
         <div class="box1"><p>BRO</p></div>
         <div class="box2"><p>BRO</p></div>
         <div class="box3"><p>BRO</p></div>
@@ -140,71 +121,69 @@ function App() {
         <div class="box7"><p>BRO</p></div>
       </div>
 
-      {/* <section id="features">
-    <div class="row">
-      <div class="feature-box col-lg-4">
-    <FontAwesomeIcon icon="coffee" />
-    <h3>Easy to use.</h3>
-    <p>So easy to use, even your dog could do it.</p>
-    </div>
-    <div class="feature-box col-lg-4">
-    <i class="fas fa-bullseye fa-4x icons"></i>
-    <h3>Elite Clientele</h3>
-    <p>We have all the dogs, the greatest dogs.</p>
-  </div>
-    <div class="feature-box col-lg-4">
-    <i class="fas fa-heart fa-4x icons"></i>
-    <h3>Guaranteed to work.</h3>
-    <p>Find the love of your dog's life or your money back.</p>
-  </div>
-  </div>
-  </section> */}
-      {/* FOOTER BEGINS FROM HERE */}
+
+      {/* Footer starts here */}
       <body>
-        
-          <section class="lilfootie">
-      
-                <div class="foot"></div>
-                  <footer>
-                      <div class="main_foot">
-                        <div claas="foot_head">
-                        <h3>Quick Links</h3><br />
-                        <ul>
-                          <li><a class="list_foot_color" href="#">Home</a></li> <br />
-                          <li><a class="list_foot_color" href="#">About</a></li> <br />
-                          <li><a class="list_foot_color" href="#">Gallery</a></li> <br />
-                          <li><a class="list_foot_color" href="#">Clients</a></li><br />
-                        </ul>
-                        </div>
-                        <div class="foot_head">
-                        <h3>Social Networks</h3> <br />
-                        <ul>
-                          <li><a class="list_foot_color" href="https://instagram.com/fivesecondsblank?igshid=1d0v0u5wn51h8" target="_blank" rel="noopener noreferrer" >Instagram</a></li><br />
-                          <li><a class="list_foot_color" href="https://www.facebook.com/fivesecondsblank" target="_blank" rel="noopener noreferrer">Facebook</a></li><br />
-                          <li><a class="list_foot_color" href="http://www.google.com" target="_blank" rel="noopener noreferrer">Youtube</a></li><br />
-                          <li><a class="list_foot_color" href="http://www.google.com" target="_blank" rel="noopener noreferrer">Linkedin</a></li><br />
-                        </ul>
-                        </div>
-                        <div class="foot_head">
-                        <h3>Contact</h3>
-                        <p><h4>Address:</h4> <br />
-                        F - 20/A, Hauz Khas Enclave New Delhi, Delhi 110016 India </p><br />
-                          <h4>Phone: </h4> <br />
-                          <p>+91 7755000005</p>
+        <section class="lilfootie">
+          <div class="foot"></div>
+          <footer>
+              <div class="main_foot">
+                  <div claas="foot_head">
+                      <h3>Quick Links</h3>
+                      <br />
+                      <ul>
+                          <li><Link class="list_foot_color" to="idBanner" smooth={true} offset={-70} duration={500}> <a>Home</a> </Link></li>
                           <br />
-                          <h4>Email:</h4> <br />
-                          <p>lol@gmail.lol.com</p>
+                          <li><Link class="list_foot_color" to="idAboutUs" smooth={true} offset={-70} duration={500}> <a>About</a> </Link></li>
                           <br />
-                        </div>
-                      </div>
+                          <li><Link class="list_foot_color" to="idGallery" smooth={true} offset={-70} duration={500}> <a>Gallery</a> </Link></li>
+                          <br />
+                          <li><Link class="list_foot_color" to="idClient" smooth={true} offset={-70} duration={500}> <a>Clients</a> </Link></li>
+                          <br />
+                          {/* <li><a class="list_foot_color" href="#">About</a></li>
+                          <br />
+                          <li><a class="list_foot_color" href="#">Gallery</a></li>
+                          <br />
+                          <li><a class="list_foot_color" href="#">Clients</a></li>
+                          <br /> */}
+                      </ul>
+                  </div>
+                  <div class="foot_head">
+                      <h3>Social Networks</h3>
+                      <br />
+                      <ul>
+                          <li><a class="list_foot_color" href="https://instagram.com/fivesecondsblank?igshid=1d0v0u5wn51h8" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                          <br />
+                          <li><a class="list_foot_color" href="https://www.facebook.com/fivesecondsblank" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+                          <br />
+                          <li><a class="list_foot_color" href="http://www.google.com" target="_blank" rel="noopener noreferrer">Youtube</a></li>
+                          <br />
+                          <li><a class="list_foot_color" href="http://www.google.com" target="_blank" rel="noopener noreferrer">Linkedin</a></li>
+                          <br />
+                      </ul>
+                  </div>
+                  <div class="foot_head">
+                      <h3>Contact</h3>
+                      <h4>Address:</h4>
+                      <br />
+                      <p>F - 20/A, Hauz Khas Enclave New Delhi, Delhi 110016 India</p>
+                      <br />
+                      <h4>Phone:</h4>
+                      <br />
+                      <p>+91 7755000005</p>
+                      <br />
+                      <h4>Email:</h4>
+                      <br />
+                      <p>lol@gmail.lol.com</p>
+                      <br />
+                  </div>
+              </div>
+          </footer>
+      </section>
 
-
-
-                  </footer>
-            </section>       
       </body>
 
-      {/* Footer ends here       */}
+      {/* Footer ends here */}
       
     </div>
   );

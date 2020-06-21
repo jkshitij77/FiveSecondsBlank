@@ -254,7 +254,6 @@ footer{
 }
 
 
-
 ReactCompareSlider{
   object-fit: cover;
 }
@@ -311,4 +310,8 @@ ReactCompareSlider{
   background-color: yellow;
   grid-row: 3/4;
   grid-column: 1/3;
+}
+
+.lilfootie li{
+  cursor: pointer;
 }
