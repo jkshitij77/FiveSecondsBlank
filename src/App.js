@@ -47,10 +47,10 @@ function App() {
       <div class="header">
         <div class="insideBanner">
           <div class="logosforside">
-            <a href="https://www.facebook.com/fivesecondsblank" target="_blank"><img src={require('./facebook.png')}></img></a>
-            <a href="https://instagram.com/fivesecondsblank?igshid=1d0v0u5wn51h8" target="_blank"><img src={require('./instagram.png')}></img></a>
-            <a href="http://www.google.com" target="_blank"><img src={require('./10 copy.jpg')}></img></a>
-            <a href="http://www.google.com" target="_blank"><img src={require('./10 copy.jpg')}></img></a>
+            <a href="https://www.facebook.com/fivesecondsblank" target="_blank" rel="noopener noreferrer"><img src={require('./facebook.png')}></img></a>
+            <a href="https://instagram.com/fivesecondsblank?igshid=1d0v0u5wn51h8" target="_blank" rel="noopener noreferrer"><img src={require('./instagram.png')}></img></a>
+            <a href="http://www.google.com" target="_blank" rel="noopener noreferrer"><img src={require('./10 copy.jpg')}></img></a>
+            <a href="http://www.google.com" target="_blank" rel="noopener noreferrer"><img src={require('./10 copy.jpg')}></img></a>
           </div>
           <div class="pictureInsideBanner">
             <img src={require("./logo.png")} alt="Logo" class="logo"></img>
@@ -67,12 +67,25 @@ function App() {
 
       {/* We have the about us section here */}
       <div class="aboutus" id="idAboutUs">
-        <h3>ABOUT US</h3>
+        <h3 class="dicked">ABOUT US</h3><br />
         <p>Five Seconds Blank Productions Private Limited is an audio-visual production
           company based out of Delhi and is expanding operations all over India. We aim to entertain 
           and inform our audience by producing a variety of relatable content while maintaining an artistic 
           and creative perspective.
         </p>
+        <br />
+        <div class="dabbasand">
+        <h3 class="lildabba">
+          <img src={require("./TGC.png")} alt="Logo" class="logo" width="auto" ></img> <br />
+          <br /> San.D <br />
+        <div class="lulli">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, maxime, veniam adipisci odio ab magni, aspernatur pariatur obcaecati reprehenderit modi eos! Modi soluta doloremque vitae mollitia natus minima voluptatum id?laudantium, minus dolore!</div>
+        </h3>
+        <h3 class="lildabba">
+        <img src={require("./TGC.png")} alt="Logo" class="logo" ></img> <br />
+        <br /> The Groovin' Cat <br />
+        <p class="lulli">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit quibusdam debitis porro, magnam ex at corporis repellendus! Provident, mollitia. Maxime debitis distinctio aspernatur voluptas eius labore mollitia laudantium, minus dolore!</p>
+        </h3>
+        </div>
       </div>
 
       {/* We have the gallery section here */}
@@ -146,6 +159,52 @@ function App() {
   </div>
   </div>
   </section> */}
+      {/* FOOTER BEGINS FROM HERE */}
+      <body>
+        
+          <section class="lilfootie">
+      
+                <div class="foot"></div>
+                  <footer>
+                      <div class="main_foot">
+                        <div claas="foot_head">
+                        <h3>Quick Links</h3><br />
+                        <ul>
+                          <li><a class="list_foot_color" href="#">Home</a></li> <br />
+                          <li><a class="list_foot_color" href="#">About</a></li> <br />
+                          <li><a class="list_foot_color" href="#">Gallery</a></li> <br />
+                          <li><a class="list_foot_color" href="#">Clients</a></li><br />
+                        </ul>
+                        </div>
+                        <div class="foot_head">
+                        <h3>Social Networks</h3> <br />
+                        <ul>
+                          <li><a class="list_foot_color" href="https://instagram.com/fivesecondsblank?igshid=1d0v0u5wn51h8" target="_blank" rel="noopener noreferrer" >Instagram</a></li><br />
+                          <li><a class="list_foot_color" href="https://www.facebook.com/fivesecondsblank" target="_blank" rel="noopener noreferrer">Facebook</a></li><br />
+                          <li><a class="list_foot_color" href="http://www.google.com" target="_blank" rel="noopener noreferrer">Youtube</a></li><br />
+                          <li><a class="list_foot_color" href="http://www.google.com" target="_blank" rel="noopener noreferrer">Linkedin</a></li><br />
+                        </ul>
+                        </div>
+                        <div class="foot_head">
+                        <h3>Contact</h3>
+                        <p><h4>Address:</h4> <br />
+                        F - 20/A, Hauz Khas Enclave New Delhi, Delhi 110016 India </p><br />
+                          <h4>Phone: </h4> <br />
+                          <p>+91 7755000005</p>
+                          <br />
+                          <h4>Email:</h4> <br />
+                          <p>lol@gmail.lol.com</p>
+                          <br />
+                        </div>
+                      </div>
+
+
+
+                  </footer>
+            </section>       
+      </body>
+
+      {/* Footer ends here       */}
       
     </div>
   );
