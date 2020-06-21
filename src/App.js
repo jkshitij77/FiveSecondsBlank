@@ -4,6 +4,13 @@ import { Link, animateScroll as scroll } from "react-scroll";
 import Contact from './Contact.js';
 import { ReactCompareSlider, ReactCompareSliderImage } from 'react-compare-slider';
 import Meettheteam from './Meettheteam';
+
+import { faHome } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+
+import ReactDOM from 'react-dom';
+import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 // import {Map, GoogleApiWrapper} from 'google-maps-react';
 
 function gimmethequote(){
@@ -17,12 +24,19 @@ function toGallery(){
 function App() {
   return (
     <div class="body">
+      <FontAwesomeIcon icon={faCoffee} size="3x" color="red"/>
+
+      {/* <script src="https://use.fontawesome.com/f49e083040.js"></script>
+      <script src="https://kit.fontawesome.com/9f3fe80a0d.js" crossorigin="anonymous"></script> */}
+
+
+
       {/* <Link to="idAboutUs" smooth={true} offset={-70} duration={500}> About</Link> */}
 
       <div class="floatingbutton" onClick={gimmethequote}>Get quote</div>
       <div class="sidenavbar">
         {/* <Link to="idAboutUs" smooth={true} offset={-70} duration={500}> About</Link> */}
-        <Link to="idAboutUs" smooth={true} offset={-70} duration={500}> <img src={require("./aboutusimg.png")}></img></Link>
+        <Link to="idAboutUs" smooth={true} offset={-70} duration={500}> <img id="dangbruh"src={require("./aboutusimg.png")}></img></Link>
         <Link to="idGallery" smooth={true} offset={-70} duration={500}> <img src={require("./gallery.png")}></img></Link>
         <Link to="idClient" smooth={true} offset={-70} duration={500}> <img src={require("./customer-care.png")}></img></Link>
         <Link to="idContact" smooth={true} offset={-70} duration={500}> <img src={require("./contactbruh.png")}></img></Link>
@@ -97,6 +111,41 @@ function App() {
       Add the phone call thign to that component*/}
       <Contact />
       <Meettheteam />
+
+      <div class="clients" id="idClient">
+
+      </div>
+
+      {/* Section for gallery */}
+      <div class="gallerySection">
+        <div class="box1"><p>BRO</p></div>
+        <div class="box2"><p>BRO</p></div>
+        <div class="box3"><p>BRO</p></div>
+        <div class="box4"><p>BRO</p></div>
+        <div class="box5"><p>BRO</p></div>
+        <div class="box6"><p>BRO</p></div>
+        <div class="box7"><p>BRO</p></div>
+      </div>
+
+      {/* <section id="features">
+    <div class="row">
+      <div class="feature-box col-lg-4">
+    <FontAwesomeIcon icon="coffee" />
+    <h3>Easy to use.</h3>
+    <p>So easy to use, even your dog could do it.</p>
+    </div>
+    <div class="feature-box col-lg-4">
+    <i class="fas fa-bullseye fa-4x icons"></i>
+    <h3>Elite Clientele</h3>
+    <p>We have all the dogs, the greatest dogs.</p>
+  </div>
+    <div class="feature-box col-lg-4">
+    <i class="fas fa-heart fa-4x icons"></i>
+    <h3>Guaranteed to work.</h3>
+    <p>Find the love of your dog's life or your money back.</p>
+  </div>
+  </div>
+  </section> */}
       
     </div>
   );

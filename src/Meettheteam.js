@@ -28,7 +28,7 @@ class Meettheteam extends Component {
                 </div>
                 
 
-                <div class="uselessContainer">
+                {/* <div class="uselessContainer">
                     <div class="lowercontainer">
                         <div class="left">
                             <form>
@@ -58,17 +58,21 @@ class Meettheteam extends Component {
                         
                         </div>
                     </div>
-                </div>
+                </div> */}
 
 
                 {/* Button for calling and with added calling functionality */}
-                <div id="call-btn" class="visible-xs">
+                {/* <div id="call-btn" class="visible-xs">
                     <a class="btn" href="tel:7007937472">
                     <span> 
                         <img src={require("./CALLING_ICON.png")} alt="CallingIcon"></img>
                     </span>
                     </a>
-                </div>
+                </div> */}
+
+
+        
+
             </div>
         );
     }
