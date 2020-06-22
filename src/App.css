@@ -225,7 +225,8 @@ Link{
   display: flex;
   flex-wrap: wrap-reverse;
   padding-top: 7vh;
-  height: 100vh;
+  margin-top: 5vh;
+  
   align-content: center;
 }
 ul{
@@ -245,12 +246,12 @@ ul{
   flex: 1;
 }
 footer{
-  margin-bottom: 0;
+  margin-bottom: -6.4vh;
 }
 
 
 .lilfootie{
-  min-height: 90vh;
+  
 }
 
 
