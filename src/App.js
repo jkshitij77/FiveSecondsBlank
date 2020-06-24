@@ -12,7 +12,6 @@ import Home from './Home';
 // import ReactDOM from 'react-dom';
 // import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 
-
 function App() {
   return (
     <Router>

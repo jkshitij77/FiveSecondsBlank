@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
+import {Link as RouterLink, Switch, Route} from 'react-router-dom';
 import './contactcss.css';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTimes } from '@fortawesome/free-solid-svg-icons';
 
 
 class Contact extends Component {
@@ -8,47 +11,16 @@ class Contact extends Component {
         this.state = {};
     }
 
-
     render() {
         return (
             <div class="body">
+                <RouterLink to="/"><div class="floatingbutton"> <img class="crossIcon" src={require('./close.png')}/></div></RouterLink>
                 <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet"></link>
                 
                 {/* Upper part fo the page. Has the banner */}
                 <div>
                     <img src={require("./conus.png")} class="contact_banner"></img>
                 </div>
-                
-                {/* Lower part of the contact page */}
-                {/* <div class="details" >
-                    <p>Fill This <br />Form Below</p>
-                    <div class="formalignleft">
-                        <form>
-                            <label class="labelfont">
-                                Name:
-                                <input type="text" name="name" />
-                            </label><br />
-
-                            <label class="labelfont">
-                                Email:
-                                <input type="text" name="name" />
-                            </label> <br />
-                            <label class="labelfont">
-                                Thots:
-                                <textarea type="text" name="name" />
-                            </label> <br />
-                            <input type="submit" value="Submit" />
-                        </form>
-                    </div>
-
-                    <div class="formalignright">
-                    <p>Contact No.: 099997 83321</p>
-                        <p>Address: F - 20/A, Hauz Khas Enclave
-                            New Delhi, Delhi 110016
-                            India
-                        </p>
-                    </div>
-                </div> */}
 
                 <div class="uselessContainer">
                     <div class="lowercontainer">

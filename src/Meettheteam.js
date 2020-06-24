@@ -26,39 +26,6 @@ class Meettheteam extends Component {
                         <figure><img src={require('./ghoulc.jpg')} alt="p1"></img></figure>
                     </div>
                 </div>
-                
-
-                {/* <div class="uselessContainer">
-                    <div class="lowercontainer">
-                        <div class="left">
-                            <form>
-                                <label class="labelfont">
-                                    Name:
-                                    <input type="text" name="name" />
-                                </label><br />
-
-                                <label class="labelfont">
-                                    Email:
-                                    <input type="text" name="name" />
-                                </label> <br />
-                                <label class="labelfont">
-                                    Ideas :
-                                    <textarea type="text" name="name" />
-                                </label> <br />
-                                <input type="submit" value="Submit" />
-                            </form>
-                        </div>
-                        <div class="right">
-                            <h2><p>Address:</p> <p class="xxfloat">F - 20/A, Hauz Khas Enclave
-                                New Delhi, Delhi 110016
-                                India</p> <br />
-                                <p>Contact No:</p> <p class="xxfloat">099997 83321</p>
-                            </h2>
-                            
-                        
-                        </div>
-                    </div>
-                </div> */}
 
 
                 {/* Button for calling and with added calling functionality */}

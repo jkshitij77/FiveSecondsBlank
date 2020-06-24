@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import {Link as RouterLink, Switch, Route} from 'react-router-dom';
 import { Link, animateScroll as scroll } from "react-scroll";
 
 class Home extends Component{
@@ -25,7 +25,7 @@ class Home extends Component{
                 <div class="body">
       {/* <FontAwesomeIcon icon={faCoffee} size="3x" color="red"/> */}
 
-      <div class="floatingbutton" onClick={this.gimmethequote}>Get quote</div>
+      <RouterLink to="/Contact"><div class="floatingbutton" onClick={this.gimmethequote}>Get quote</div></RouterLink>
       <div class="sidenavbar">
         <Link to="idAboutUs" smooth={true} offset={-70} duration={500}> <img id="dangbruh"src={require("./aboutusimg.png")}></img></Link>
         <Link to="idGallery" smooth={true} offset={-70} duration={500}> <img src={require("./gallery.png")}></img></Link>
@@ -77,54 +77,26 @@ class Home extends Component{
         </div>
       </div>
 
-      {/* We have the gallery section here */}
-      {/* <div class="gallerycontainer">
-        <div class="gallery" id="idGallery">
-          <ReactCompareSlider
-            itemOne={<ReactCompareSliderImage src={require("./10 copy.jpg")}  alt="Image one" />}
-            itemTwo={<ReactCompareSliderImage src={require("./14 copy.jpg")} alt="Image two" />}
-            position={20}
-          />
-        </div>
-      </div> */}
-      {/* Have a button that takes us to gallery. Can not have the same functionality with the image */}
-        {/* onClick={toGallery} */}
-      
-      {/* <div class="lol divfortestimonial" id="idTestimonial">
-        <h2 class="testis">
-          TESTIMONIALS
-        </h2>
-        <div class="lold">
-        Lorem ipsum dolor Lorem ipsum dolorLorem ipsum dolorLorem ipsum dolorLorem ipsum dolorLorem ipsum dolorLorem ipsum dolor
-        </div>
-      </div> */}
-
-      {/* Just trying the contact component right here
-      Have something to redirect us to the contact component 
-      Add the phone call thign to that component
-      <Contact />
-      <Meettheteam /> */}
-
       <div class="clients" id="idClient">
 
       </div>
 
+          
       {/* Section for gallery */}
       <div class="randoGalleryDiv">
       <h1 class="galleryText" >Gallery</h1>
       <div class="gallerySection" id="idGallery">
-        <div class="box1"><p>BRO</p></div>
-        <div class="box2"><p>BRO</p></div>
-        <div class="box3"><p>BRO</p></div>
-        <div class="box4"><p>BRO</p></div>
-        <div class="box5"><p>BRO</p></div>
-        <div class="box6"><p>BRO</p></div>
-        <div class="box7"><p>BRO</p></div>
+        <div class="box1"><figure><img class="galleryImage" src={require('./ghoulc.jpg')}/></figure></div>
+        <div class="box2"><figure><img class="galleryImage" src={require('./ghoulc.jpg')}/></figure></div>
+        <div class="box3"><figure><img class="galleryImage" src={require('./ghoulc.jpg')}/></figure></div>
+        <div class="box4">Text</div>
+        <div class="box5"><figure><img class="galleryImage" src={require('./ghoulc.jpg')}/></figure></div>
+        <div class="box6">Text</div>
+        <div class="box7"><figure><img class="galleryImage" src={require('./ghoulc.jpg')}/></figure></div>
       </div>
       </div>
 
       <hr class="divider"/>
-
 
       {/* Footer starts here */}
       <body>
