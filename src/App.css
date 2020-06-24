@@ -1,10 +1,6 @@
 .body{
   margin: 0;
-  background-color: #452F71;
-  padding-bottom: 50px;
   overflow-x: hidden;
-  /* TODO: Remove this  */
-
 }
 
 .brclass{
@@ -51,6 +47,7 @@ cursor: pointer;
 }
 
 .logosforside{
+  float: left;
   padding-top: 25vh;
   display: flex;
   flex-direction: column;
@@ -73,8 +70,8 @@ cursor: pointer;
 }
 
 .logo{
-  height: 40vh;
-  width: 40vh;
+  height: 50vh;
+  width: 50vh;
   border-radius: 50%;
 }
 
@@ -116,13 +113,13 @@ h3{
 }
 .dicked{
   padding: 3vh;
-
 }
   
 .aboutus{
-  background-image: linear-gradient(-85deg,#ff8686,#f168d8);
+  /* background-image: linear-gradient(-85deg,#ff8686,#f168d8); */
   margin: 0vh;
   margin-bottom: 10vh;
+  margin-top: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -218,19 +215,21 @@ Link{
   text-align: center;
 }
 .main_foot{
-  background-color: rgb(14, 14, 14);
+  background-color: rgb(49, 45, 45);
   color: white;
   font-size: medium;
   padding-left: 30vh;
   display: flex;
   flex-wrap: wrap-reverse;
   padding-top: 7vh;
-  height: 100vh;
+  height: 30vh;
   align-content: center;
+  margin: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 ul{
   list-style: none;
-  
   text-align: left;
 }
 .foot_head{
@@ -238,21 +237,7 @@ ul{
 }
 .list_foot_color{
   color: rgb(16, 255, 255);
-
 }
-.foot{
-  
-  flex: 1;
-}
-footer{
-  margin-bottom: 0;
-}
-
-
-.lilfootie{
-  min-height: 90vh;
-}
-
 
 ReactCompareSlider{
   object-fit: cover;
@@ -269,8 +254,11 @@ ReactCompareSlider{
 
 
 .gallerySection{
+  background-color: black;
   padding-left: 5vh;
   padding-right: 20vh;
+  padding-bottom: 10vh;
+  padding-top: 10vh;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: repeat(3, 250px);
@@ -314,4 +302,9 @@ ReactCompareSlider{
 
 .lilfootie li{
   cursor: pointer;
+}
+
+.divider{
+  width: 50vw;
+  justify-self: center;
 }

@@ -2,16 +2,13 @@ import React from 'react';
 import './App.css';
 import { Link, animateScroll as scroll } from "react-scroll";
 import Contact from './Contact.js';
-import { ReactCompareSlider, ReactCompareSliderImage } from 'react-compare-slider';
 import Meettheteam from './Meettheteam';
 
-import { faHome } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
-
-import ReactDOM from 'react-dom';
-import { faCoffee } from '@fortawesome/free-solid-svg-icons';
-// import {Map, GoogleApiWrapper} from 'google-maps-react';
+// import { ReactCompareSlider, ReactCompareSliderImage } from 'react-compare-slider';
+// import { faHome } from "@fortawesome/free-solid-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import ReactDOM from 'react-dom';
+// import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 
 function gimmethequote(){
   console.log("getting the quote");
@@ -36,14 +33,14 @@ function App() {
       
       {/* Header part is here
           We have our banner with the text and logo here */}
+          {/* Need to change this so it matches with what we want. Do we wanna do grid right here? */}
       <div class="header" id="idBanner">
+        <div class="logosforside">
+          <a href="https://www.facebook.com/fivesecondsblank" target="_blank" rel="noopener noreferrer"><img src={require('./facebook.png')}></img></a>
+          <a href="https://instagram.com/fivesecondsblank?igshid=1d0v0u5wn51h8" target="_blank" rel="noopener noreferrer"><img src={require('./instagram.png')}></img></a>
+          <a href="https://www.youtube.com/channel/UCohxO9e4rpGaQG6XSEZyZFA" target="_blank" rel="noopener noreferrer"><img src={require('./youtube.png')}></img></a>
+        </div>
         <div class="insideBanner">
-          <div class="logosforside">
-            <a href="https://www.facebook.com/fivesecondsblank" target="_blank" rel="noopener noreferrer"><img src={require('./facebook.png')}></img></a>
-            <a href="https://instagram.com/fivesecondsblank?igshid=1d0v0u5wn51h8" target="_blank" rel="noopener noreferrer"><img src={require('./instagram.png')}></img></a>
-            <a href="http://www.google.com" target="_blank" rel="noopener noreferrer"><img src={require('./10 copy.jpg')}></img></a>
-            <a href="http://www.google.com" target="_blank" rel="noopener noreferrer"><img src={require('./10 copy.jpg')}></img></a>
-          </div>
           <div class="pictureInsideBanner">
             <img src={require("./logo.png")} alt="Logo" class="logo"></img>
           </div>
@@ -91,20 +88,20 @@ function App() {
       {/* Have a button that takes us to gallery. Can not have the same functionality with the image */}
         {/* onClick={toGallery} */}
       
-      <div class="lol divfortestimonial" id="idTestimonial">
+      {/* <div class="lol divfortestimonial" id="idTestimonial">
         <h2 class="testis">
           TESTIMONIALS
         </h2>
         <div class="lold">
         Lorem ipsum dolor Lorem ipsum dolorLorem ipsum dolorLorem ipsum dolorLorem ipsum dolorLorem ipsum dolorLorem ipsum dolor
         </div>
-      </div>
+      </div> */}
 
       {/* Just trying the contact component right here
       Have something to redirect us to the contact component 
-      Add the phone call thign to that component*/}
+      Add the phone call thign to that component
       <Contact />
-      <Meettheteam />
+      <Meettheteam /> */}
 
       <div class="clients" id="idClient">
 
@@ -120,6 +117,8 @@ function App() {
         <div class="box6"><p>BRO</p></div>
         <div class="box7"><p>BRO</p></div>
       </div>
+
+      <hr class="divider"/>
 
 
       {/* Footer starts here */}
