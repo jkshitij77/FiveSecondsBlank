@@ -1,6 +1,6 @@
 .body{
   margin: 0;
-  overflow-y: hidden;
+  overflow: hidden;
 }
 
 .brclass{
@@ -14,17 +14,17 @@ a{
 }
 
 .floatingbutton{
-margin-left: 85vw;
-margin-top: 5vh;
-background-color: black;
-padding: 10px 20px 10px 20px;
-color: white;
-position: fixed;
-font-size: 30px;
-font-family: Arial, Helvetica, sans-serif;
-font-weight: bold;
-border-radius: 20px;
-cursor: pointer;
+  margin-left: 85vw;
+  margin-top: 5vh;
+  background-color: black;
+  padding: 10px 20px 10px 20px;
+  color: white;
+  position: fixed;
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  border-radius: 20px;
+  cursor: pointer;
 }
 
 .header{
