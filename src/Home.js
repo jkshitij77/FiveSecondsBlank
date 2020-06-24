@@ -56,7 +56,7 @@ class Home extends Component{
       {/* Side Nav Bar */}
       <div class="sidenavbar">
         <Link to="idAboutUs" smooth={true} offset={-70} duration={500}> <img id="dangbruh"src={require("./aboutusimg.png")}></img></Link>
-        <Link to="idGallery" smooth={true} offset={-70} duration={500}> <img src={require("./gallery.png")}></img></Link>
+        <Link to="idGallery" smooth={true} offset={-70} duation={500}> <img src={require("./gallery.png")}></img></Link>
         <Link to="idClient" smooth={true} offset={-70} duration={500}> <img src={require("./customer-care.png")}></img></Link>
         <RouterLink to="/Contact"> <img src={require("./contactbruh.png")} /></RouterLink>
       </div>      

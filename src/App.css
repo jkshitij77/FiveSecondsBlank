@@ -235,11 +235,12 @@ Link{
   display: flex;
   flex-wrap: wrap-reverse;
   padding-top: 7vh;
-  height: 30vh;  
+
+  /* Check this */
+  height: 50vh;
+  
   align-content: center;
-  margin: 0;
-  margin-bottom: 0;
-  padding-bottom: 0;
+  margin-bottom: -3vh;
 }
 ul{
   list-style: none;
@@ -247,6 +248,7 @@ ul{
 }
 .foot_head{
   padding-left: 15vh;
+
 }
 .list_foot_color{
   color: rgb(16, 255, 255);
