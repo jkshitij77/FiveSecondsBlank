@@ -1,41 +1,69 @@
 import React, { Component } from 'react';
 import './App.css';
-import {Link as RouterLink, Switch, Route} from 'react-router-dom';
-import { Link, animateScroll as scroll } from "react-scroll";
+import {Link as RouterLink} from 'react-router-dom';
+import { Link, animateScroll } from "react-scroll";
+import { MdLocationOn } from "react-icons/md";
+import { TiPhone } from "react-icons/ti"
 
 class Home extends Component{
 
     constructor(props){
-        super(props);
-        this.state = {};
+      super(props);
+      this.state = {activeBox: 0};
     }
 
-
     gimmethequote(){
-        console.log("getting the quote");
+      console.log("getting the quote");
     }
   
     toGallery(){
-        console.log("Redirect to gallery");
+      console.log("Redirect to gallery");
     }
 
     render(){
+      var box1Stuff = "Inside NO box";
+      if(this.state.activeBox===1){
+        box1Stuff = "Inside box 1";
+      }
+      else if(this.state.activeBox===2){
+        box1Stuff = "Inside box 2";
+      }
+      else if(this.state.activeBox===3){
+        box1Stuff = "Inside box 3";
+      }
+      else if(this.state.activeBox===5){
+        box1Stuff = "Inside box 5";
+      }
+      else if (this.state.activeBox===7){
+        box1Stuff = "Inside box 7";
+      };
+
         return(
             <div>
                 <div class="body">
       {/* <FontAwesomeIcon icon={faCoffee} size="3x" color="red"/> */}
 
+
+      {/* Floating buttons right here. Get quote and map and phone */}
       <RouterLink to="/Contact"><div class="floatingbutton" onClick={this.gimmethequote}>Get quote</div></RouterLink>
+      <div class="fixedButtons"> 
+        <a href="https://www.google.com/maps/place/Five+Seconds+Blank+Productions+Pvt.+Ltd/data=!3m1!4b1!4m2!3m1!1s0x390ce371ce7d77ab:0x9c73b9cf3c766e7b" target="_blank"><MdLocationOn size={50} color={"#000000"}/></a>
+        <a href="tel:+917755000005" target="_blank"><TiPhone size={50} color={"#000000"}/></a>
+      </div>
+
+
+
+      {/* Side Nav Bar */}
       <div class="sidenavbar">
         <Link to="idAboutUs" smooth={true} offset={-70} duration={500}> <img id="dangbruh"src={require("./aboutusimg.png")}></img></Link>
         <Link to="idGallery" smooth={true} offset={-70} duration={500}> <img src={require("./gallery.png")}></img></Link>
         <Link to="idClient" smooth={true} offset={-70} duration={500}> <img src={require("./customer-care.png")}></img></Link>
-        <Link to="idContact" smooth={true} offset={-70} duration={500}> <img src={require("./contactbruh.png")}></img></Link>
+        <RouterLink to="/Contact"> <img src={require("./contactbruh.png")} /></RouterLink>
       </div>      
       
-      {/* Header part is here
-          We have our banner with the text and logo here */}
-          {/* Need to change this so it matches with what we want. Do we wanna do grid right here? */}
+
+
+      {/* Header part is here We have our banner with the text and logo here */}
       <div class="header" id="idBanner">
         <div class="logosforside">
           <a href="https://www.facebook.com/fivesecondsblank" target="_blank" rel="noopener noreferrer"><img src={require('./facebook.png')}></img></a>
@@ -77,22 +105,18 @@ class Home extends Component{
         </div>
       </div>
 
-      <div class="clients" id="idClient">
-
-      </div>
-
           
       {/* Section for gallery */}
       <div class="randoGalleryDiv">
       <h1 class="galleryText" >Gallery</h1>
       <div class="gallerySection" id="idGallery">
-        <div class="box1"><figure><img class="galleryImage" src={require('./ghoulc.jpg')}/></figure></div>
-        <div class="box2"><figure><img class="galleryImage" src={require('./ghoulc.jpg')}/></figure></div>
-        <div class="box3"><figure><img class="galleryImage" src={require('./ghoulc.jpg')}/></figure></div>
-        <div class="box4">Text</div>
-        <div class="box5"><figure><img class="galleryImage" src={require('./ghoulc.jpg')}/></figure></div>
+        <div class="box1" onMouseEnter={()=>{ this.setState({activeBox: 1})}} onMouseLeave={()=>{this.setState({activeBox: 0,})}}><figure><img class="galleryImage" src={require('./ghoulc.jpg')}/></figure></div>
+        <div class="box2" onMouseEnter={()=>{ this.setState({activeBox: 2})}} onMouseLeave={()=>{this.setState({activeBox: 0,})}}><figure><img class="galleryImage" src={require('./ghoulc.jpg')}/></figure></div>
+        <div class="box3" onMouseEnter={()=>{ this.setState({activeBox: 3})}} onMouseLeave={()=>{this.setState({activeBox: 0,})}}><figure><img class="galleryImage" src={require('./ghoulc.jpg')}/></figure></div>
+        <div class="box4">{box1Stuff}</div>
+        <div class="box5" onMouseEnter={()=>{ this.setState({activeBox: 5})}} onMouseLeave={()=>{this.setState({activeBox: 0,})}}><figure><img class="galleryImage" src={require('./ghoulc.jpg')}/></figure></div>
         <div class="box6">Text</div>
-        <div class="box7"><figure><img class="galleryImage" src={require('./ghoulc.jpg')}/></figure></div>
+        <div class="box7" onMouseEnter={()=>{ this.setState({activeBox: 7})}} onMouseLeave={()=>{this.setState({activeBox: 0,})}}><figure><img class="galleryImage" src={require('./ghoulc.jpg')}/></figure></div>
       </div>
       </div>
 
@@ -163,9 +187,8 @@ class Home extends Component{
       
     </div>
             </div>
-        );
-    }
-
+    );
+  }
 }
 
 export default Home;

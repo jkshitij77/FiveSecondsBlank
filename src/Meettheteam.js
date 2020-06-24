@@ -17,7 +17,7 @@ class Meettheteam extends Component {
                 {/* Upper part fo the page. Has the banner */}
                 {/* TODO: Replace with meet the team banner */}
                 <div>
-                    <img src={require("./conus.png")} class="contact_banner"></img>
+                    <img src={require("./conus.png")} alt="Contact Us Banner" class="contact_banner"></img>
                 </div>
 
                 <div class="uselessContainer2">

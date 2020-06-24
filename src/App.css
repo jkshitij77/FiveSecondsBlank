@@ -27,6 +27,13 @@ a{
   cursor: pointer;
 }
 
+.fixedButtons{
+  display: flex;
+  margin-left: 85vw;
+  margin-top: 12vh;
+  position: fixed;
+}
+
 .header{
   height: 85vh;
   width: 100vw;
@@ -228,11 +235,7 @@ Link{
   display: flex;
   flex-wrap: wrap-reverse;
   padding-top: 7vh;
-
-  /* Check this */
-  height: 30vh;
-  margin-top: 5vh;
-  
+  height: 30vh;  
   align-content: center;
   margin: 0;
   margin-bottom: 0;
@@ -295,6 +298,7 @@ ReactCompareSlider{
   background-color: red;
   grid-row: 2/3;
   grid-column: 2/3;
+  font-size: 50px;
 }
 .box5{
   background-color: green;

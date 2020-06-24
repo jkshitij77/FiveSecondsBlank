@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
-import {Link as RouterLink, Switch, Route} from 'react-router-dom';
+import {Link as RouterLink} from 'react-router-dom';
 import './contactcss.css';
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faTimes } from '@fortawesome/free-solid-svg-icons';
 
 
 class Contact extends Component {
@@ -14,12 +12,12 @@ class Contact extends Component {
     render() {
         return (
             <div class="body">
-                <RouterLink to="/"><div class="floatingbutton"> <img class="crossIcon" src={require('./close.png')}/></div></RouterLink>
+                <RouterLink to="/"><div class="floatingbutton"> <img class="crossIcon" alt="Cross Icon" src={require('./close.png')}/></div></RouterLink>
                 <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet"></link>
                 
                 {/* Upper part fo the page. Has the banner */}
                 <div>
-                    <img src={require("./conus.png")} class="contact_banner"></img>
+                    <img src={require("./conus.png")} class="contact_banner" alt="Banner" />
                 </div>
 
                 <div class="uselessContainer">
