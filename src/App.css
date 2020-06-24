@@ -222,7 +222,12 @@ Link{
   display: flex;
   flex-wrap: wrap-reverse;
   padding-top: 7vh;
+<<<<<<< HEAD
   height: 30vh;
+=======
+  margin-top: 5vh;
+  
+>>>>>>> 812ca48fc25cc409c3c340a95cbbf5beb18e8efe
   align-content: center;
   margin: 0;
   margin-bottom: 0;
@@ -237,6 +242,22 @@ ul{
 }
 .list_foot_color{
   color: rgb(16, 255, 255);
+<<<<<<< HEAD
+=======
+
+}
+.foot{
+  
+  flex: 1;
+}
+footer{
+  margin-bottom: -6.4vh;
+}
+
+
+.lilfootie{
+  
+>>>>>>> 812ca48fc25cc409c3c340a95cbbf5beb18e8efe
 }
 
 ReactCompareSlider{
