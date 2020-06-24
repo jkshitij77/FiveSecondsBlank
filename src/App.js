@@ -63,12 +63,12 @@ function App() {
         <br />
         <div class="dabbasand">
         <h3 class="lildabba">
-          <img src={require("./TGC.png")} alt="Logo" class="logo" width="auto" ></img> <br />
+          <img src={require("./TGC.png")} alt="Logo" class="logoSand" width="auto" ></img> <br />
           <br /> San.D <br />
         <div class="lulli">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, maxime, veniam adipisci odio ab magni, aspernatur pariatur obcaecati reprehenderit modi eos! Modi soluta doloremque vitae mollitia natus minima voluptatum id?laudantium, minus dolore!</div>
         </h3>
         <h3 class="lildabba">
-        <img src={require("./TGC.png")} alt="Logo" class="logo" ></img> <br />
+        <img src={require("./TGC.png")} alt="Logo" class="logoSand" ></img> <br />
         <br /> The Groovin' Cat <br />
         <p class="lulli">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit quibusdam debitis porro, magnam ex at corporis repellendus! Provident, mollitia. Maxime debitis distinctio aspernatur voluptas eius labore mollitia laudantium, minus dolore!</p>
         </h3>
@@ -108,6 +108,8 @@ function App() {
       </div>
 
       {/* Section for gallery */}
+      <div class="randoGalleryDiv">
+      <h1 class="galleryText" >Gallery</h1>
       <div class="gallerySection" id="idGallery">
         <div class="box1"><p>BRO</p></div>
         <div class="box2"><p>BRO</p></div>
@@ -116,6 +118,7 @@ function App() {
         <div class="box5"><p>BRO</p></div>
         <div class="box6"><p>BRO</p></div>
         <div class="box7"><p>BRO</p></div>
+      </div>
       </div>
 
       <hr class="divider"/>

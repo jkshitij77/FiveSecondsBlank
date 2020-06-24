@@ -75,6 +75,12 @@ cursor: pointer;
   border-radius: 50%;
 }
 
+.logoSand{
+  height: 25vh;
+  width: 25vh;
+  border-radius: 50%;
+}
+
 h1{
   font-size: 15vh;
 }
@@ -311,4 +317,16 @@ ReactCompareSlider{
 .divider{
   width: 50vw;
   justify-self: center;
+}
+
+.galleryText{
+  color: white;
+  align-self: center;
+}
+.randoGalleryDiv{
+  font-family: cursive;
+  padding-top: 5vh;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
 }
