@@ -237,10 +237,10 @@ Link{
   padding-top: 7vh;
 
   /* Check this */
-  height: 50vh;
+  height: auto;
   
   align-content: center;
-  margin-bottom: -3vh;
+  margin-bottom: -1vh;
 }
 ul{
   list-style: none;
@@ -373,3 +373,34 @@ figure{
   object-fit: cover;
 }
 
+/* 
+{-------------Meet the Team Section ----------------------} */
+.Collapsible__contentOuter{
+  margin-top: 3%;
+  
+}
+.Collapsible__contentInner{
+  
+  display: flex;
+
+}
+.Collapsible__trigger{
+  background-color: #f85888;
+  font-weight: 500;
+  box-shadow: 3px 5px rgb(41, 40, 40);
+  padding: 1vh;
+  padding-right: -1.5vh;
+  font-size: .85em;
+  margin-left: 40%;
+  border-radius: 15px;
+  
+  width: 20%;
+ 
+}
+.director-tt{
+  padding: 4vh;
+  box-shadow: 3px 3px rgb(41, 40, 40);
+  font-size: .70em;
+}
+/* 
+{-------------Meet the Team Section Ends----------------------} */

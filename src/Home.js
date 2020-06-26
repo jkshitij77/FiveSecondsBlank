@@ -3,7 +3,8 @@ import './App.css';
 import {Link as RouterLink} from 'react-router-dom';
 import { Link } from "react-scroll";
 import { MdLocationOn } from "react-icons/md";
-import { TiPhone } from "react-icons/ti"
+import { TiPhone } from "react-icons/ti";
+import Collapsible from 'react-collapsible';
 
 class Home extends Component{
 
@@ -103,10 +104,42 @@ class Home extends Component{
         <p class="lulli">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit quibusdam debitis porro, magnam ex at corporis repellendus! Provident, mollitia. Maxime debitis distinctio aspernatur voluptas eius labore mollitia laudantium, minus dolore!</p>
         </h3>
         </div>
-      </div>
 
-      {/* Meet the Team Section */}
+            {/* -------------Meet the Team Section ----------------------*/}
+        <h3>
+                <Collapsible trigger="Meet the team">
+                  <div>
+                      <p> <img src={require("./TGC.png")} class="logoSand" width="auto" ></img> <br /> 
+                            <p class="director-tt"> Director I <br/> Vishrut Pande</p>
+                      </p>
+                  </div>
 
+                  <div>
+                      <p> <img src={require("./TGC.png")} class="logoSand" width="auto" ></img> <br /> 
+                            <p  class="director-tt"> Director I <br/> Vishrut Pande</p>
+                      </p>
+                  </div>
+                  <div>
+                      <p> <img src={require("./TGC.png")} class="logoSand" width="auto" ></img> <br /> 
+                            <p   class="director-tt" > Director I <br/> Vishrut Pande</p>
+                      </p>
+                  </div>
+                  <div>
+                      <p> <img src={require("./TGC.png")} class="logoSand" width="auto" ></img> <br /> 
+                            <p   class="director-tt"> Director I <br/> Vishrut Pande</p>
+                      </p>
+
+                  </div>
+                  
+                </Collapsible>
+                
+          </h3>
+          {/* -------------Meet the Team Section ----------------------*/}
+
+        </div>
+
+      
+      
           
       {/* Section for gallery */}
       <div class="randoGalleryDiv">
