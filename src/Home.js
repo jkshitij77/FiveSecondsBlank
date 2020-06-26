@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import {Link as RouterLink} from 'react-router-dom';
-import { Link, animateScroll } from "react-scroll";
+import { Link } from "react-scroll";
 import { MdLocationOn } from "react-icons/md";
 import { TiPhone } from "react-icons/ti"
 
@@ -47,18 +47,18 @@ class Home extends Component{
       {/* Floating buttons right here. Get quote and map and phone */}
       <RouterLink to="/Contact"><div class="floatingbutton" onClick={this.gimmethequote}>Get quote</div></RouterLink>
       <div class="fixedButtons"> 
-        <a href="https://www.google.com/maps/place/Five+Seconds+Blank+Productions+Pvt.+Ltd/data=!3m1!4b1!4m2!3m1!1s0x390ce371ce7d77ab:0x9c73b9cf3c766e7b" target="_blank"><MdLocationOn size={50} color={"#000000"}/></a>
-        <a href="tel:+917755000005" target="_blank"><TiPhone size={50} color={"#000000"}/></a>
+        <a rel="noopener noreferrer" href="https://www.google.com/maps/place/Five+Seconds+Blank+Productions+Pvt.+Ltd/data=!3m1!4b1!4m2!3m1!1s0x390ce371ce7d77ab:0x9c73b9cf3c766e7b" target="_blank"><MdLocationOn size={50} color={"#000000"}/></a>
+        <a rel="noopener noreferrer" href="tel:+917755000005" target="_blank"><TiPhone size={50} color={"#000000"}/></a>
       </div>
 
 
 
       {/* Side Nav Bar */}
       <div class="sidenavbar">
-        <Link to="idAboutUs" smooth={true} offset={-70} duration={500}> <img id="dangbruh"src={require("./aboutusimg.png")}></img></Link>
-        <Link to="idGallery" smooth={true} offset={-70} duation={500}> <img src={require("./gallery.png")}></img></Link>
-        <Link to="idClient" smooth={true} offset={-70} duration={500}> <img src={require("./customer-care.png")}></img></Link>
-        <RouterLink to="/Contact"> <img src={require("./contactbruh.png")} /></RouterLink>
+        <Link to="idAboutUs" smooth={true} offset={-70} duration={500}> <img id="dangbruh"src={require("./aboutusimg.png")} alt="aboutus"></img></Link>
+        <Link to="idGallery" smooth={true} offset={-70} duation={500}> <img src={require("./gallery.png")} alt="gallery"></img></Link>
+        <Link to="idClient" smooth={true} offset={-70} duration={500}> <img src={require("./customer-care.png")} alt="customer"></img></Link>
+        <RouterLink to="/Contact"> <img src={require("./contactbruh.png")} alt="contactus"/></RouterLink>
       </div>      
       
 
@@ -66,9 +66,9 @@ class Home extends Component{
       {/* Header part is here We have our banner with the text and logo here */}
       <div class="header" id="idBanner">
         <div class="logosforside">
-          <a href="https://www.facebook.com/fivesecondsblank" target="_blank" rel="noopener noreferrer"><img src={require('./facebook.png')}></img></a>
-          <a href="https://instagram.com/fivesecondsblank?igshid=1d0v0u5wn51h8" target="_blank" rel="noopener noreferrer"><img src={require('./instagram.png')}></img></a>
-          <a href="https://www.youtube.com/channel/UCohxO9e4rpGaQG6XSEZyZFA" target="_blank" rel="noopener noreferrer"><img src={require('./youtube.png')}></img></a>
+          <a href="https://www.facebook.com/fivesecondsblank" target="_blank" rel="noopener noreferrer"><img src={require('./facebook.png')} alt="facebooklogo"></img></a>
+          <a href="https://instagram.com/fivesecondsblank?igshid=1d0v0u5wn51h8" target="_blank" rel="noopener noreferrer"><img src={require('./instagram.png')} alt="instagramlogo"></img></a>
+          <a href="https://www.youtube.com/channel/UCohxO9e4rpGaQG6XSEZyZFA" target="_blank" rel="noopener noreferrer"><img src={require('./youtube.png')} alt="youtubelogo"></img></a>
         </div>
         <div class="insideBanner">
           <div class="pictureInsideBanner">
@@ -112,7 +112,9 @@ class Home extends Component{
       <div class="randoGalleryDiv">
       <h1 class="galleryText" >Gallery</h1>
       <div class="gallerySection" id="idGallery">
+      <RouterLink to={{pathname: "/Gallery", aboutProps: {whereFrom: 1} }}>
         <div class="box1" onMouseEnter={()=>{ this.setState({activeBox: 1})}} onMouseLeave={()=>{this.setState({activeBox: 0,})}}><figure><img class="galleryImage" src={require('./ghoulc.jpg')}/></figure></div>
+      </RouterLink>
         <div class="box2" onMouseEnter={()=>{ this.setState({activeBox: 2})}} onMouseLeave={()=>{this.setState({activeBox: 0,})}}><figure><img class="galleryImage" src={require('./ghoulc.jpg')}/></figure></div>
         <div class="box3" onMouseEnter={()=>{ this.setState({activeBox: 3})}} onMouseLeave={()=>{this.setState({activeBox: 0,})}}><figure><img class="galleryImage" src={require('./ghoulc.jpg')}/></figure></div>
         <div class="box4">{box1Stuff}</div>
@@ -121,7 +123,10 @@ class Home extends Component{
         <div class="box7" onMouseEnter={()=>{ this.setState({activeBox: 7})}} onMouseLeave={()=>{this.setState({activeBox: 0,})}}><figure><img class="galleryImage" src={require('./ghoulc.jpg')}/></figure></div>
       </div>
       </div>
+      {/* This is how to route with props */}
+      {/* <RouterLink to={{pathname: "/Gallery", aboutProps: {whereFrom: 1} }}> </RouterLink> */}
 
+      
       <hr class="divider"/>
 
       {/* Footer starts here */}
