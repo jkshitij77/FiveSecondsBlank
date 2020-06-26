@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import {Link as RouterLink} from 'react-router-dom';
 import './contactcss.css';
+import Button from 'react-bootstrap/Button'
+import { findByDisplayValue } from '@testing-library/react';
 
 
 class Contact extends Component {
@@ -10,6 +12,7 @@ class Contact extends Component {
     }
 
     render() {
+        
         return (
             <div class="body">
                 <RouterLink to="/"><div class="floatingbutton"> <img class="crossIcon" alt="Cross Icon" src={require('./close.png')}/></div></RouterLink>
@@ -24,7 +27,7 @@ class Contact extends Component {
                     <div class="lowercontainer">
                         <div class="left">
                             <form>
-                                <label class="labelfont">
+                                <label>
                                     Name:
                                     <input type="text" name="name" />
                                 </label><br />
@@ -33,20 +36,18 @@ class Contact extends Component {
                                     Email:
                                     <input type="text" name="name" />
                                 </label> <br />
-                                <label class="labelfont">
+                                  <label class="labelfont shiftup">
                                     Ideas :
-                                    <textarea type="text" name="name" />
-                                </label> <br />
-                                <input type="submit" value="Submit" />
+                                </label>
+                                <textarea type="text" name="name" /> 
+                                <br />
+                                <Button variant="outline-dark">Submit</Button>
                             </form>
                         </div>
                         <div class="right">
-                            <h2><p>Address:</p> <p class="xxfloat">F - 20/A, Hauz Khas Enclave
-                                New Delhi, Delhi 110016
-                                India</p> <br />
-                                <p>Contact No:</p> <p class="xxfloat">099997 83321</p>
-                            </h2>
-                            
+                            <h2>Address:</h2><h4>F - 20/A, Hauz Khas Enclave <br/> New Delhi,
+                                 Delhi 110016 India</h4> <br />
+                                <h2>Contact No:</h2> <h4>099997 83321</h4>
                         
                         </div>
                     </div>
