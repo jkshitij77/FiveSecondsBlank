@@ -105,6 +105,8 @@ class Home extends Component{
         </div>
       </div>
 
+      {/* Meet the Team Section */}
+
           
       {/* Section for gallery */}
       <div class="randoGalleryDiv">
