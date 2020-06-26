@@ -290,6 +290,9 @@ ReactCompareSlider{
 }
 .box6{
   background-color: greenyellow;
+  grid-row: 3/4;
+  grid-column: 4/5;
+  font-size: 50px;
 }
 .box7{
   background-color: yellow;
@@ -380,3 +383,34 @@ figure{
 h5{
   color: rgb(16, 255, 255);
 }
+/* 
+{-------------Meet the Team Section ----------------------} */
+.Collapsible__contentOuter{
+  margin-top: 3%;
+  
+}
+.Collapsible__contentInner{
+  
+  display: flex;
+
+}
+.Collapsible__trigger{
+  background-color: #f85888;
+  font-weight: 500;
+  box-shadow: 3px 5px rgb(41, 40, 40);
+  padding: 1vh;
+  padding-right: -1.5vh;
+  font-size: .85em;
+  margin-left: 40%;
+  border-radius: 15px;
+  
+  width: 20%;
+ 
+}
+.director-tt{
+  padding: 4vh;
+  /* box-shadow: 3px 3px rgb(41, 40, 40); */
+  font-size: .70em;
+}
+/* 
+{-------------Meet the Team Section Ends----------------------} */
