@@ -12,30 +12,31 @@ a{
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
 }
-
-.floatingbutton{
+/* <------------BUTTONS-------------> */
+.btn-info{
   margin-left: 85vw;
   margin-top: 5vh;
-  background-color: black;
-  padding: 10px 20px 10px 20px;
-  color: white;
+  padding: 6px 15px 6px 15px;
   position: fixed;
-  font-size: 30px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
-  border-radius: 20px;
+  font-size: 4vh;
+  border-radius: 25px;
   cursor: pointer;
+  z-index: 1000;
 }
-
-.fixedButtons{
+.darkbuttonholder{
+  position: fixed;
   display: flex;
   margin-left: 85vw;
-  margin-top: 12vh;
-  position: fixed;
+  margin-top: 14vh;
+  z-index: 100;
 }
-
+.btn-light{
+  background-color: transparent;
+  border: transparent;
+}
+/* <-------------BUTTONS end----------> */
 .header{
-  height: 85vh;
+  height: 86vh;
   width: 100vw;
   /* background-image: linear-gradient(to right, rgb(205, 94, 209), rgb(255, 68, 68)); */
   /* background-color: #FED3EB; */
@@ -227,33 +228,10 @@ Link{
   margin-right: 5vh ;
   text-align: center;
 }
-.main_foot{
-  background-color: rgb(49, 45, 45);
-  color: white;
-  font-size: medium;
-  padding-left: 30vh;
-  display: flex;
-  flex-wrap: wrap-reverse;
-  padding-top: 7vh;
-
-  /* Check this */
-  height: 50vh;
-  
-  align-content: center;
-  margin-bottom: -3vh;
-}
 ul{
   list-style: none;
   text-align: left;
 }
-.foot_head{
-  padding-left: 15vh;
-
-}
-.list_foot_color{
-  color: rgb(16, 255, 255);
-}
-
 ReactCompareSlider{
   object-fit: cover;
 }
@@ -267,6 +245,9 @@ ReactCompareSlider{
   flex-direction: row;
 }
 
+
+
+/* <---------------------this is the GALLERY SECTION---------------------> */
 
 .gallerySection{
   background-color: black;
@@ -318,16 +299,12 @@ ReactCompareSlider{
   grid-row: 3/4;
   grid-column: 1/3;
 }
-
-.lilfootie li{
-  cursor: pointer;
-}
-
 .divider{
   width: 50vw;
+  height:0.5vh;
+  margin: 0;
   justify-self: center;
 }
-
 .galleryText{
   color: white;
   align-self: center;
@@ -339,20 +316,15 @@ ReactCompareSlider{
   display: flex;
   flex-direction: column;
 }
-
 .crossIcon{
   height: 5vh;
   width: 5vh;
 }
-
 .galleryImage{
   max-width: 100%;
   max-height: 100%;
   /* object-fit: scale-down; */
 }
-
-
-
 .gallerySection figure img {
   -webkit-transform: scale(1);
   transform: scale(1);
@@ -391,3 +363,71 @@ body::-webkit-scrollbar-thumb{
   margin-top: auto;
   /* Using a pseudo selector for the last child will push it to the end */
 }
+/* <-------------------this is the FOOTER-----------------> */
+
+ .main_foot{
+  width: 100vw;
+  background-color: rgb(49, 45, 45);
+  color: white;
+  font-size: medium;
+  padding-top: 6vh;
+  padding-left: 7vh;
+}
+.col-4{
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container{
+  padding: 0;
+  margin: 0;
+}
+.footerh3{
+  text-decoration-line: underline;
+}
+.reducelineheight{
+  line-height: 0.5vh;
+}
+.increasemargin li{
+  margin: 0.7vh;
+  cursor: pointer;
+  color: rgb(16, 255, 255);
+}
+.increasemargin a{
+  color: rgb(16, 255, 255);
+}
+h5{
+  color: rgb(16, 255, 255);
+}
+/* 
+{-------------Meet the Team Section ----------------------} */
+.Collapsible__contentOuter{
+  margin-top: 3%;
+  
+}
+.Collapsible__contentInner{
+  
+  display: flex;
+
+}
+.Collapsible__trigger{
+  background-color: #f85888;
+  font-weight: 500;
+  box-shadow: 3px 5px rgb(41, 40, 40);
+  padding: 1vh;
+  padding-right: -1.5vh;
+  font-size: .85em;
+  margin-left: 40%;
+  border-radius: 15px;
+  
+  width: 20%;
+ 
+}
+.director-tt{
+  padding: 4vh;
+  /* box-shadow: 3px 3px rgb(41, 40, 40); */
+  font-size: .70em;
+}
+/* 
+{-------------Meet the Team Section Ends----------------------} */

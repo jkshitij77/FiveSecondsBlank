@@ -4,6 +4,12 @@ import {Link as RouterLink} from 'react-router-dom';
 import { Link } from "react-scroll";
 import { MdLocationOn } from "react-icons/md";
 import { TiPhone } from "react-icons/ti"
+import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
+import Button from 'react-bootstrap/Button'
+import { TiPhone } from "react-icons/ti";
+import Collapsible from 'react-collapsible';
 
 class Home extends Component{
 
@@ -41,16 +47,13 @@ class Home extends Component{
         return(
             <div>
                 <div class="body">
-      {/* <FontAwesomeIcon icon={faCoffee} size="3x" color="red"/> */}
-
-
       {/* Floating buttons right here. Get quote and map and phone */}
-      <RouterLink to="/Contact"><div class="floatingbutton" onClick={this.gimmethequote}>Get quote</div></RouterLink>
-      <div class="fixedButtons"> 
-        <a rel="noopener noreferrer" href="https://www.google.com/maps/place/Five+Seconds+Blank+Productions+Pvt.+Ltd/data=!3m1!4b1!4m2!3m1!1s0x390ce371ce7d77ab:0x9c73b9cf3c766e7b" target="_blank"><MdLocationOn size={50} color={"#000000"}/></a>
-        <a rel="noopener noreferrer" href="tel:+917755000005" target="_blank"><TiPhone size={50} color={"#000000"}/></a>
-      </div>
-
+      <RouterLink to="/Contact"><Button variant="info" onClick={this.gimmethequote}>Get quote</Button></RouterLink>
+      <div class="darkbuttonholder">
+        <Button variant="light"><a href="https://www.google.com/maps/place/Five+Seconds+Blank+Productions+Pvt.+Ltd/data=!3m1!4b1!4m2!3m1!1s0x390ce371ce7d77ab:0x9c73b9cf3c766e7b" target="_blank"><MdLocationOn size={50} color={"#23272B"}/></a></Button>
+        <Button variant="light"><a href="tel:+917755000005" target="_blank"><TiPhone size={50} color={"#23272B"}/></a></Button>
+  </div>
+ 
 
 
       {/* Side Nav Bar */}
@@ -103,8 +106,42 @@ class Home extends Component{
         <p class="lulli">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit quibusdam debitis porro, magnam ex at corporis repellendus! Provident, mollitia. Maxime debitis distinctio aspernatur voluptas eius labore mollitia laudantium, minus dolore!</p>
         </h3>
         </div>
-      </div>
 
+            {/* -------------Meet the Team Section ----------------------*/}
+        <h3>
+                <Collapsible trigger="Meet the team">
+                  <div>
+                      <p> <img src={require("./TGC.png")} class="logoSand" width="auto" ></img> <br /> 
+                            <p class="director-tt"> Director I <br/> Vishrut Pande</p>
+                      </p>
+                  </div>
+
+                  <div>
+                      <p> <img src={require("./TGC.png")} class="logoSand" width="auto" ></img> <br /> 
+                            <p  class="director-tt"> Director I <br/> Vishrut Pande</p>
+                      </p>
+                  </div>
+                  <div>
+                      <p> <img src={require("./TGC.png")} class="logoSand" width="auto" ></img> <br /> 
+                            <p   class="director-tt" > Director I <br/> Vishrut Pande</p>
+                      </p>
+                  </div>
+                  <div>
+                      <p> <img src={require("./TGC.png")} class="logoSand" width="auto" ></img> <br /> 
+                            <p   class="director-tt"> Director I <br/> Vishrut Pande</p>
+                      </p>
+
+                  </div>
+                  
+                </Collapsible>
+                
+          </h3>
+          {/* -------------Meet the Team Section ----------------------*/}
+
+        </div>
+
+      
+      
           
       {/* Section for gallery */}
       <div class="randoGalleryDiv">
@@ -129,63 +166,58 @@ class Home extends Component{
 
       {/* Footer starts here */}
       <body>
-        <section class="lilfootie">
-          <div class="foot"></div>
-          <footer>
-              <div class="main_foot">
-                  <div claas="foot_head">
-                      <h3>Quick Links</h3>
+      <div class="main_foot"> 
+        <Container>
+       
+        <Row>
+             
+               <Col xs={4}>
+                  
+                      <h3 class="footerh3">Quick Links</h3>
                       <br />
-                      <ul>
-                          <li><Link class="list_foot_color" to="idBanner" smooth={true} offset={-70} duration={500}> <a>Home</a> </Link></li>
+                      <ul class="increasemargin">
+                          <li><Link to="idBanner" smooth={true} offset={-70} duration={500}> <a>Home</a> </Link></li>
                           <br />
-                          <li><Link class="list_foot_color" to="idAboutUs" smooth={true} offset={-70} duration={500}> <a>About</a> </Link></li>
+                          <li><Link to="idAboutUs" smooth={true} offset={-70} duration={500}> <a>About</a> </Link></li>
                           <br />
-                          <li><Link class="list_foot_color" to="idGallery" smooth={true} offset={-70} duration={500}> <a>Gallery</a> </Link></li>
+                          <li><Link  to="idGallery" smooth={true} offset={-70} duration={500}> <a>Gallery</a> </Link></li>
                           <br />
-                          <li><Link class="list_foot_color" to="idClient" smooth={true} offset={-70} duration={500}> <a>Clients</a> </Link></li>
-                          <br />
-                          {/* <li><a class="list_foot_color" href="#">About</a></li>
-                          <br />
-                          <li><a class="list_foot_color" href="#">Gallery</a></li>
-                          <br />
-                          <li><a class="list_foot_color" href="#">Clients</a></li>
-                          <br /> */}
-                      </ul>
-                  </div>
-                  <div class="foot_head">
-                      <h3>Social Networks</h3>
-                      <br />
-                      <ul>
-                          <li><a class="list_foot_color" href="https://instagram.com/fivesecondsblank?igshid=1d0v0u5wn51h8" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-                          <br />
-                          <li><a class="list_foot_color" href="https://www.facebook.com/fivesecondsblank" target="_blank" rel="noopener noreferrer">Facebook</a></li>
-                          <br />
-                          <li><a class="list_foot_color" href="http://www.google.com" target="_blank" rel="noopener noreferrer">Youtube</a></li>
-                          <br />
-                          <li><a class="list_foot_color" href="http://www.google.com" target="_blank" rel="noopener noreferrer">Linkedin</a></li>
+                          <li><Link  to="idClient" smooth={true} offset={-70} duration={500}> <a>Clients</a> </Link></li>
                           <br />
                       </ul>
-                  </div>
-                  <div class="foot_head">
-                      <h3>Contact</h3>
-                      <h4>Address:</h4>
+                  </Col>
+                  <Col xs={4}>
+                      <h3 class="footerh3">Social Networks</h3>
                       <br />
-                      <p>F - 20/A, Hauz Khas Enclave New Delhi, Delhi 110016 India</p>
+                      <ul class="increasemargin">
+                          <li><a href="https://instagram.com/fivesecondsblank?igshid=1d0v0u5wn51h8" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                          <br />
+                          <li><a  href="https://www.facebook.com/fivesecondsblank" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+                          <br />
+                          <li><a  href="http://www.google.com" target="_blank" rel="noopener noreferrer">Youtube</a></li>
+                          <br />
+                          <li><a href="http://www.google.com" target="_blank" rel="noopener noreferrer">Linkedin</a></li>
+                          <br />
+                      </ul>
+                  </Col>
+                  <Col xs={4}>
+                      <h3 class="footerh3">Contact</h3>
+                      <br/>
+                      <h5>Address:</h5>
+                      <p class="reducelineheight">F-20/A, Hauz Khas Enclave 110016</p><p class="reducelineheight">India</p>
                       <br />
-                      <h4>Phone:</h4>
-                      <br />
-                      <p>+91 7755000005</p>
-                      <br />
-                      <h4>Email:</h4>
-                      <br />
-                      <p>lol@gmail.lol.com</p>
-                      <br />
-                  </div>
-              </div>
-          </footer>
-      </section>
-
+                      <h5>Phone:</h5>
+                      <p class="reducelineheight">+91 7755000005</p>
+                      <br/>
+                      <h5>Email:</h5>
+                      <p class="reducelineheight">lol@gmail.lol.com</p>
+                      <br/>
+                  </Col> 
+      </Row>
+     
+      </Container>
+      </div>
+     
       </body>
 
       {/* Footer ends here */}

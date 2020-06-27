@@ -14,7 +14,13 @@
   width: 80vw;
   
 }
-.details{
+.btn-outline-dark{
+  font-size:5vh;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 16px;
+  margin-left: 8vw;
+}
+/* .details{
   color: white;
   font-family: 'Cinzel', serif;
   padding: 2vh 0vh 0vh 0vh;
@@ -28,28 +34,24 @@
   text-align: left;
   padding-left: 5vw;
   border-radius: 5vh;
-
-
   display: flex;
   flex-direction: row;
-  
-}
+} */
 .labelfont{
   font-size: 3vh;
   margin-right: 0;
-}  
-
-.formalignleft{
+} 
+/* .formalignleft{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    /* justify-content: left; */
+    justify-content: left;
     padding-left: 3vw;
-}
+} */
 
-.formalignleft > label {
+/* .formalignleft > label {
   margin: 10px;
-}
+} */
 
 .lowercontainer{
   margin-top: 30px;
@@ -60,11 +62,15 @@
   height: 50vh;
   /* background-color: red; */
   align-content: center;
-  
-  
   color: white;
   font-family: 'Cinzel', serif;
-
+}
+h2{
+  color: rgb(16, 255, 255);
+  margin-top: 9vh;
+}
+h4{
+  padding: 0.8vh;
 }
 
 .left{
@@ -72,9 +78,9 @@
   height: 70vh;
   border-radius: 50px;
   background-image: linear-gradient(-175deg,#f85888,#9c378a);
-  /* display: flex;
+  display: flex;
   justify-content: center;
-  align-content: center; */
+  align-content: center;
   line-height: 50px;
   display: flex;
   align-items: center;
@@ -84,42 +90,22 @@
 /* Left and right have different gradients right now */
 /* Check which one looks better right now */
 .right{
-  /* width: 37vw;
-  height: 70vh;
-  border-radius: 50px;
-  background-image: linear-gradient(90deg,#e82661,#850e6f);
-  line-height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-    */
-  font-size: 14px;
   width: 37vw;
   height: 70vh;
   border-radius: 50px;
   background-image: linear-gradient(-175deg,#f85888,#a3318e);
-  /* display: flex;
-  justify-content: center;
-  align-content: center; */
-  line-height: 50px;
   display: flex;
-  align-items: center;
-  justify-content: center;
-
-    
+ flex-direction: column;
+ align-items: center;
+ /* justify-content: center; */
+  /* line-height: 50px; */
 }
-
 .uselessContainer{
   display: flex;
   justify-content: center;
-  padding-bottom: 50px;
+  padding-bottom: 13vh;
   
 }
-
-.xxfloat{
-  font-size: smaller;
-}
-
 /* Css for meettheteam */
 .uselessContainer2{
   display: flex;
@@ -153,4 +139,13 @@
 
 figure{
   overflow: hidden;
+}
+input{
+  height: 4vh;
+  margin: 2vh;
+}
+textarea{
+  height: 15vh;
+  margin: 2vh;
+  margin-top: 5vh;
 }

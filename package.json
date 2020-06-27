@@ -13,6 +13,10 @@
     "google-maps-react": "^2.0.6",
     "react": "^16.13.1",
     "react-bootstrap": "^1.0.1",
+<<<<<<< HEAD
+=======
+    "react-collapsible": "^2.8.0",
+>>>>>>> 1461740fca545400bf0cea2992fc4a0ed25fdeea
     "react-compare-slider": "^1.0.4",
     "react-dom": "^16.13.1",
     "react-icons": "^3.10.0",
