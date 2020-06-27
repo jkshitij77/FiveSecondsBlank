@@ -351,6 +351,26 @@ figure{
 }
 
 
+/* Can change scrollbar things using this
+body::-webkit-scrollbar{
+  width: .25rem;
+}
+
+body::-webkit-scrollbar-track{
+  background-color: chartreuse;
+}
+
+body::-webkit-scrollbar-thumb{
+  background-color: black;
+} */
+
+.nav-item:last-child{
+  margin-top: auto;
+  /* Using a pseudo selector for the last child will push it to the end */
+}
+
+
+
 /* <-------------------this is the FOOTER-----------------> */
 
  .main_foot{
@@ -392,12 +412,9 @@ h5{
 {-------------Meet the Team Section ----------------------} */
 .Collapsible__contentOuter{
   margin-top: 3%;
-  
 }
 .Collapsible__contentInner{
-  
   display: flex;
-
 }
 .Collapsible__trigger{
   background-color: #f85888;
@@ -408,9 +425,8 @@ h5{
   font-size: .85em;
   margin-left: 40%;
   border-radius: 15px;
-  
   width: 20%;
- 
+  cursor: pointer;
 }
 .director-tt{
   padding: 4vh;

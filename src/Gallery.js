@@ -20,7 +20,7 @@ function Gallery(){
       <Carousel.Item>
         <img
           className="d-block"
-          src={require('./ghoulc.jpg')}
+          src={require('./attachments/ghoulc.jpg')}
           alt="First slide"
         />
         <Carousel.Caption>
@@ -31,7 +31,7 @@ function Gallery(){
       <Carousel.Item>
         <img
           className="d-block"
-          src={require('./ghoulc.jpg')}
+          src={require('./attachments/ghoulc.jpg')}
           alt="Second slide"
         />
 
@@ -43,7 +43,7 @@ function Gallery(){
       <Carousel.Item>
         <img
           className="d-block"
-          src={require('./ghoulc.jpg')}
+          src={require('./attachments/ghoulc.jpg')}
           alt="Third slide"
         />
 
