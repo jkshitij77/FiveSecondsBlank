@@ -8,7 +8,6 @@ import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Button from 'react-bootstrap/Button'
-import { TiPhone } from "react-icons/ti";
 import Collapsible from 'react-collapsible';
 
 class Home extends Component{
@@ -50,8 +49,8 @@ class Home extends Component{
       {/* Floating buttons right here. Get quote and map and phone */}
       <RouterLink to="/Contact"><Button variant="info" onClick={this.gimmethequote}>Get quote</Button></RouterLink>
       <div class="darkbuttonholder">
-        <Button variant="light"><a href="https://www.google.com/maps/place/Five+Seconds+Blank+Productions+Pvt.+Ltd/data=!3m1!4b1!4m2!3m1!1s0x390ce371ce7d77ab:0x9c73b9cf3c766e7b" target="_blank"><MdLocationOn size={50} color={"#23272B"}/></a></Button>
-        <Button variant="light"><a href="tel:+917755000005" target="_blank"><TiPhone size={50} color={"#23272B"}/></a></Button>
+        <Button variant="light"><a href="https://www.google.com/maps/place/Five+Seconds+Blank+Productions+Pvt.+Ltd/data=!3m1!4b1!4m2!3m1!1s0x390ce371ce7d77ab:0x9c73b9cf3c766e7b" target="_blank" rel="noopener noreferrer"><MdLocationOn size={50} color={"#23272B"}/></a></Button>
+        <Button variant="light"><a href="tel:+917755000005" rel="noopener noreferrer"><TiPhone size={50} color={"#23272B"}/></a></Button>
   </div>
  
 
@@ -111,23 +110,23 @@ class Home extends Component{
         <h3>
                 <Collapsible trigger="Meet the team">
                   <div>
-                      <p> <img src={require("./TGC.png")} class="logoSand" width="auto" ></img> <br /> 
+                      <p> <img src={require("./TGC.png")} class="logoSand" width="auto" alt="person"></img> <br /> 
                             <p class="director-tt"> Director I <br/> Vishrut Pande</p>
                       </p>
                   </div>
 
                   <div>
-                      <p> <img src={require("./TGC.png")} class="logoSand" width="auto" ></img> <br /> 
+                      <p> <img src={require("./TGC.png")} class="logoSand" width="auto" alt="person"></img> <br /> 
                             <p  class="director-tt"> Director I <br/> Vishrut Pande</p>
                       </p>
                   </div>
                   <div>
-                      <p> <img src={require("./TGC.png")} class="logoSand" width="auto" ></img> <br /> 
+                      <p> <img src={require("./TGC.png")} class="logoSand" width="auto" alt="person"></img> <br /> 
                             <p   class="director-tt" > Director I <br/> Vishrut Pande</p>
                       </p>
                   </div>
                   <div>
-                      <p> <img src={require("./TGC.png")} class="logoSand" width="auto" ></img> <br /> 
+                      <p> <img src={require("./TGC.png")} class="logoSand" width="auto" alt="person"></img> <br /> 
                             <p   class="director-tt"> Director I <br/> Vishrut Pande</p>
                       </p>
 
@@ -148,14 +147,14 @@ class Home extends Component{
       <h1 class="galleryText" >Gallery</h1>
       <div class="gallerySection" id="idGallery">
       <RouterLink to={{pathname: "/Gallery", aboutProps: {whereFrom: 1} }}>
-        <div class="box1" onMouseEnter={()=>{ this.setState({activeBox: 1})}} onMouseLeave={()=>{this.setState({activeBox: 0,})}}><figure><img class="galleryImage" src={require('./ghoulc.jpg')}/></figure></div>
+        <div class="box1" onMouseEnter={()=>{ this.setState({activeBox: 1})}} onMouseLeave={()=>{this.setState({activeBox: 0,})}}><figure><img class="galleryImage" src={require('./ghoulc.jpg')} alt="galleryimg"/></figure></div>
       </RouterLink>
-        <div class="box2" onMouseEnter={()=>{ this.setState({activeBox: 2})}} onMouseLeave={()=>{this.setState({activeBox: 0,})}}><figure><img class="galleryImage" src={require('./ghoulc.jpg')}/></figure></div>
-        <div class="box3" onMouseEnter={()=>{ this.setState({activeBox: 3})}} onMouseLeave={()=>{this.setState({activeBox: 0,})}}><figure><img class="galleryImage" src={require('./ghoulc.jpg')}/></figure></div>
+        <div class="box2" onMouseEnter={()=>{ this.setState({activeBox: 2})}} onMouseLeave={()=>{this.setState({activeBox: 0,})}}><figure><img class="galleryImage" src={require('./ghoulc.jpg')} alt="galleryimg"/></figure></div>
+        <div class="box3" onMouseEnter={()=>{ this.setState({activeBox: 3})}} onMouseLeave={()=>{this.setState({activeBox: 0,})}}><figure><img class="galleryImage" src={require('./ghoulc.jpg')} alt="galleryimg"/></figure></div>
         <div class="box4">{box1Stuff}</div>
-        <div class="box5" onMouseEnter={()=>{ this.setState({activeBox: 5})}} onMouseLeave={()=>{this.setState({activeBox: 0,})}}><figure><img class="galleryImage" src={require('./ghoulc.jpg')}/></figure></div>
+        <div class="box5" onMouseEnter={()=>{ this.setState({activeBox: 5})}} onMouseLeave={()=>{this.setState({activeBox: 0,})}}><figure><img class="galleryImage" src={require('./ghoulc.jpg')} alt="galleryimg"/></figure></div>
         <div class="box6">Text</div>
-        <div class="box7" onMouseEnter={()=>{ this.setState({activeBox: 7})}} onMouseLeave={()=>{this.setState({activeBox: 0,})}}><figure><img class="galleryImage" src={require('./ghoulc.jpg')}/></figure></div>
+        <div class="box7" onMouseEnter={()=>{ this.setState({activeBox: 7})}} onMouseLeave={()=>{this.setState({activeBox: 0,})}}><figure><img class="galleryImage" src={require('./ghoulc.jpg')} alt="galleryimg"/></figure></div>
       </div>
       </div>
       {/* This is how to route with props */}
