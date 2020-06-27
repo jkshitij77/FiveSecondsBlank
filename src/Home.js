@@ -8,7 +8,7 @@ import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Button from 'react-bootstrap/Button'
-import { TiPhone } from "react-icons/ti";
+
 import Collapsible from 'react-collapsible';
 
 class Home extends Component{
