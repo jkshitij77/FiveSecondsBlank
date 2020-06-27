@@ -68,13 +68,13 @@ class Home extends Component{
       {/* Header part is here We have our banner with the text and logo here */}
       <div class="header" id="idBanner">
         <div class="logosforside">
-          <a href="https://www.facebook.com/fivesecondsblank" target="_blank" rel="noopener noreferrer"><img src={require('./facebook.png')} alt="facebooklogo"></img></a>
-          <a href="https://instagram.com/fivesecondsblank?igshid=1d0v0u5wn51h8" target="_blank" rel="noopener noreferrer"><img src={require('./instagram.png')} alt="instagramlogo"></img></a>
-          <a href="https://www.youtube.com/channel/UCohxO9e4rpGaQG6XSEZyZFA" target="_blank" rel="noopener noreferrer"><img src={require('./youtube.png')} alt="youtubelogo"></img></a>
+          <a href="https://www.facebook.com/fivesecondsblank" target="_blank" rel="noopener noreferrer"><img src={require('./attachments/logos/facebook.png')} alt="facebooklogo"></img></a>
+          <a href="https://instagram.com/fivesecondsblank?igshid=1d0v0u5wn51h8" target="_blank" rel="noopener noreferrer"><img src={require('./attachments/logos/instagram.png')} alt="instagramlogo"></img></a>
+          <a href="https://www.youtube.com/channel/UCohxO9e4rpGaQG6XSEZyZFA" target="_blank" rel="noopener noreferrer"><img src={require('./attachments/logos/youtube.png')} alt="youtubelogo"></img></a>
         </div>
         <div class="insideBanner">
           <div class="pictureInsideBanner">
-            <img src={require("./logo.png")} alt="Logo" class="logo"></img>
+            <img src={require("./attachments/logo.png")} alt="Logo" class="logo"></img>
           </div>
           <div class="textInsideBanner">
             <h1 id="Title">Five <br class="brclass"/> Seconds <br class="brclass"/> Blank</h1>
@@ -95,12 +95,12 @@ class Home extends Component{
         <br />
         <div class="dabbasand">
         <h3 class="lildabba">
-          <img src={require("./TGC.png")} alt="Logo" class="logoSand" width="auto" ></img> <br />
+          <img src={require("./attachments/TGC.png")} alt="Logo" class="logoSand" width="auto" ></img> <br />
           <br /> San.D <br />
         <div class="lulli">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, maxime, veniam adipisci odio ab magni, aspernatur pariatur obcaecati reprehenderit modi eos! Modi soluta doloremque vitae mollitia natus minima voluptatum id?laudantium, minus dolore!</div>
         </h3>
         <h3 class="lildabba">
-        <img src={require("./TGC.png")} alt="Logo" class="logoSand" ></img> <br />
+        <img src={require("./attachments/TGC.png")} alt="Logo" class="logoSand" ></img> <br />
         <br /> The Groovin' Cat <br />
         <p class="lulli">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit quibusdam debitis porro, magnam ex at corporis repellendus! Provident, mollitia. Maxime debitis distinctio aspernatur voluptas eius labore mollitia laudantium, minus dolore!</p>
         </h3>
@@ -110,23 +110,23 @@ class Home extends Component{
         <h3>
                 <Collapsible trigger="Meet the team">
                   <div>
-                      <p> <img src={require("./TGC.png")} class="logoSand" width="auto" alt="person"></img> <br /> 
+                      <p> <img src={require("./attachments/TGC.png")} class="logoSand" width="auto" alt="person"></img> <br /> 
                             <p class="director-tt"> Director I <br/> Vishrut Pande</p>
                       </p>
                   </div>
 
                   <div>
-                      <p> <img src={require("./TGC.png")} class="logoSand" width="auto" alt="person"></img> <br /> 
+                      <p> <img src={require("./attachments/TGC.png")} class="logoSand" width="auto" alt="person"></img> <br /> 
                             <p  class="director-tt"> Director I <br/> Vishrut Pande</p>
                       </p>
                   </div>
                   <div>
-                      <p> <img src={require("./TGC.png")} class="logoSand" width="auto" alt="person"></img> <br /> 
+                      <p> <img src={require("./attachments/TGC.png")} class="logoSand" width="auto" alt="person"></img> <br /> 
                             <p   class="director-tt" > Director I <br/> Vishrut Pande</p>
                       </p>
                   </div>
                   <div>
-                      <p> <img src={require("./TGC.png")} class="logoSand" width="auto" alt="person"></img> <br /> 
+                      <p> <img src={require("./attachments/TGC.png")} class="logoSand" width="auto" alt="person"></img> <br /> 
                             <p   class="director-tt"> Director I <br/> Vishrut Pande</p>
                       </p>
 
@@ -147,14 +147,14 @@ class Home extends Component{
       <h1 class="galleryText" >Gallery</h1>
       <div class="gallerySection" id="idGallery">
       <RouterLink to={{pathname: "/Gallery", aboutProps: {whereFrom: 1} }}>
-        <div class="box1" onMouseEnter={()=>{ this.setState({activeBox: 1})}} onMouseLeave={()=>{this.setState({activeBox: 0,})}}><figure><img class="galleryImage" src={require('./ghoulc.jpg')} alt="galleryimg"/></figure></div>
+        <div class="box1" onMouseEnter={()=>{ this.setState({activeBox: 1})}} onMouseLeave={()=>{this.setState({activeBox: 0,})}}><figure><img class="galleryImage" src={require('./attachments/ghoulc.jpg')} alt="galleryimg"/></figure></div>
       </RouterLink>
-        <div class="box2" onMouseEnter={()=>{ this.setState({activeBox: 2})}} onMouseLeave={()=>{this.setState({activeBox: 0,})}}><figure><img class="galleryImage" src={require('./ghoulc.jpg')} alt="galleryimg"/></figure></div>
-        <div class="box3" onMouseEnter={()=>{ this.setState({activeBox: 3})}} onMouseLeave={()=>{this.setState({activeBox: 0,})}}><figure><img class="galleryImage" src={require('./ghoulc.jpg')} alt="galleryimg"/></figure></div>
+        <div class="box2" onMouseEnter={()=>{ this.setState({activeBox: 2})}} onMouseLeave={()=>{this.setState({activeBox: 0,})}}><figure><img class="galleryImage" src={require('./attachments/ghoulc.jpg')} alt="galleryimg"/></figure></div>
+        <div class="box3" onMouseEnter={()=>{ this.setState({activeBox: 3})}} onMouseLeave={()=>{this.setState({activeBox: 0,})}}><figure><img class="galleryImage" src={require('./attachments/ghoulc.jpg')} alt="galleryimg"/></figure></div>
         <div class="box4">{box1Stuff}</div>
-        <div class="box5" onMouseEnter={()=>{ this.setState({activeBox: 5})}} onMouseLeave={()=>{this.setState({activeBox: 0,})}}><figure><img class="galleryImage" src={require('./ghoulc.jpg')} alt="galleryimg"/></figure></div>
+        <div class="box5" onMouseEnter={()=>{ this.setState({activeBox: 5})}} onMouseLeave={()=>{this.setState({activeBox: 0,})}}><figure><img class="galleryImage" src={require('./attachments/ghoulc.jpg')} alt="galleryimg"/></figure></div>
         <div class="box6">Text</div>
-        <div class="box7" onMouseEnter={()=>{ this.setState({activeBox: 7})}} onMouseLeave={()=>{this.setState({activeBox: 0,})}}><figure><img class="galleryImage" src={require('./ghoulc.jpg')} alt="galleryimg"/></figure></div>
+        <div class="box7" onMouseEnter={()=>{ this.setState({activeBox: 7})}} onMouseLeave={()=>{this.setState({activeBox: 0,})}}><figure><img class="galleryImage" src={require('./attachments/ghoulc.jpg')} alt="galleryimg"/></figure></div>
       </div>
       </div>
       {/* This is how to route with props */}

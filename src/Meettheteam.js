@@ -22,8 +22,8 @@ class Meettheteam extends Component {
 
                 <div class="uselessContainer2">
                     <div class="rowthing">
-                        <figure><img src={require('./ghoulc.jpg')} alt="p1"></img></figure>
-                        <figure><img src={require('./ghoulc.jpg')} alt="p1"></img></figure>
+                        <figure><img src={require('./attachments/ghoulc.jpg')} alt="p1"></img></figure>
+                        <figure><img src={require('./attachments/ghoulc.jpg')} alt="p1"></img></figure>
                     </div>
                 </div>
 

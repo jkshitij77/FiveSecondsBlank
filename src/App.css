@@ -363,6 +363,9 @@ body::-webkit-scrollbar-thumb{
   margin-top: auto;
   /* Using a pseudo selector for the last child will push it to the end */
 }
+
+
+
 /* <-------------------this is the FOOTER-----------------> */
 
  .main_foot{
@@ -404,12 +407,9 @@ h5{
 {-------------Meet the Team Section ----------------------} */
 .Collapsible__contentOuter{
   margin-top: 3%;
-  
 }
 .Collapsible__contentInner{
-  
   display: flex;
-
 }
 .Collapsible__trigger{
   background-color: #f85888;
@@ -420,9 +420,8 @@ h5{
   font-size: .85em;
   margin-left: 40%;
   border-radius: 15px;
-  
   width: 20%;
- 
+  cursor: pointer;
 }
 .director-tt{
   padding: 4vh;
