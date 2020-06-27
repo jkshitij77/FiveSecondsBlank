@@ -136,7 +136,6 @@ class Home extends Component{
                 
           </h3>
           {/* -------------Meet the Team Section ----------------------*/}
-
         </div>
 
       
@@ -146,9 +145,11 @@ class Home extends Component{
       <div class="randoGalleryDiv">
       <h1 class="galleryText" >Gallery</h1>
       <div class="gallerySection" id="idGallery">
-      <RouterLink to={{pathname: "/Gallery", aboutProps: {whereFrom: 1} }}>
-        <div class="box1" onMouseEnter={()=>{ this.setState({activeBox: 1})}} onMouseLeave={()=>{this.setState({activeBox: 0,})}}><figure><img class="galleryImage" src={require('./attachments/ghoulc.jpg')} alt="galleryimg"/></figure></div>
-      </RouterLink>
+        <div class="box1" onMouseEnter={()=>{ this.setState({activeBox: 1})}} onMouseLeave={()=>{this.setState({activeBox: 0,})}}>
+          <RouterLink to={{pathname: "/Gallery", aboutProps: {whereFrom: 1} }}>
+          <figure><img class="galleryImage" src={require('./attachments/ghoulc.jpg')} alt="galleryimg"/></figure>
+          </RouterLink>
+        </div>
         <div class="box2" onMouseEnter={()=>{ this.setState({activeBox: 2})}} onMouseLeave={()=>{this.setState({activeBox: 0,})}}><figure><img class="galleryImage" src={require('./attachments/ghoulc.jpg')} alt="galleryimg"/></figure></div>
         <div class="box3" onMouseEnter={()=>{ this.setState({activeBox: 3})}} onMouseLeave={()=>{this.setState({activeBox: 0,})}}><figure><img class="galleryImage" src={require('./attachments/ghoulc.jpg')} alt="galleryimg"/></figure></div>
         <div class="box4">{box1Stuff}</div>
@@ -170,7 +171,7 @@ class Home extends Component{
        
         <Row>
              
-               <Col xs={4}>
+               <Col sm={12} md={4} id="KILLME">
                   
                       <h3 class="footerh3">Quick Links</h3>
                       <br />
@@ -185,7 +186,7 @@ class Home extends Component{
                           <br />
                       </ul>
                   </Col>
-                  <Col xs={4}>
+                  <Col sm={12} md={4}>
                       <h3 class="footerh3">Social Networks</h3>
                       <br />
                       <ul class="increasemargin">
@@ -199,7 +200,7 @@ class Home extends Component{
                           <br />
                       </ul>
                   </Col>
-                  <Col xs={4}>
+                  <Col sm={12} md={4}>
                       <h3 class="footerh3">Contact</h3>
                       <br/>
                       <h5>Address:</h5>

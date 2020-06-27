@@ -10,6 +10,7 @@ function Gallery(){
 
   const handleSelect = (selectedIndex, e) => {
     setIndex(selectedIndex);
+    console.log(e);
   };
 
   return (

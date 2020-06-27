@@ -41,7 +41,6 @@ a{
   /* background-image: linear-gradient(to right, rgb(205, 94, 209), rgb(255, 68, 68)); */
   /* background-color: #FED3EB; */
   background-color: #A0BBEC;
-
   /* rgb(238, 132, 132) */
   /* rgb(240, 74, 218) */
   /* filter: saturate(70%); */
@@ -130,7 +129,6 @@ h3{
 }
   
 .aboutus{
-  /* background-image: linear-gradient(-85deg,#ff8686,#f168d8); */
   margin: 0vh;
   margin-bottom: 10vh;
   margin-top: 10vh;
@@ -141,7 +139,6 @@ h3{
   text-align: left;
   line-height: 5vh;
   font-size: 3vh;
-  
 }
 
 .sidenavbar{
@@ -212,7 +209,6 @@ Link{
 .dabbasand{
   display: flex;
   margin-top: 5vh;
-  
   justify-content: left;
   width: 80vw;
   height: auto;
@@ -324,9 +320,6 @@ ReactCompareSlider{
   object-fit: cover;
   width: 100%;
   height: 100%;
-
-  
-  /* object-fit: scale-down; */
 }
 .gallerySection figure img {
   -webkit-transform: scale(1);
@@ -349,6 +342,10 @@ figure{
   height: 100%;
   width: 100%;
 }
+
+
+/* <-------------------GALLERY section ends-----------------> */
+
 
 
 /* Can change scrollbar things using this
@@ -435,3 +432,9 @@ h5{
 }
 /* 
 {-------------Meet the Team Section Ends----------------------} */
+
+@media (max-width: 768px){
+  #KILLME{
+    display: none;
+  }
+}
