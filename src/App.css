@@ -372,3 +372,22 @@ figure{
   max-height: 100%;
   object-fit: cover;
 }
+
+
+/* Can change scrollbar things using this
+body::-webkit-scrollbar{
+  width: .25rem;
+}
+
+body::-webkit-scrollbar-track{
+  background-color: chartreuse;
+}
+
+body::-webkit-scrollbar-thumb{
+  background-color: black;
+} */
+
+.nav-item:last-child{
+  margin-top: auto;
+  /* Using a pseudo selector for the last child will push it to the end */
+}
