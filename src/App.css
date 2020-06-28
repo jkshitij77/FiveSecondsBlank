@@ -478,6 +478,11 @@ h5{
   font-style: italic;
   margin-bottom: 5%;
 }
+@media (max-width: 768px){
+  .text-footer-tag-alt{
+    margin-left: 9%;
+  }
+}
 
 
 /* 
