@@ -1,7 +1,7 @@
 .body{
   margin: 0;
   overflow: hidden;
-  background-color: lightsteelblue;
+  background-color: whitesmoke;
 }
 #Title{
   margin-left: -2vh;
@@ -174,6 +174,43 @@ h3{
   flex-direction: column;
   margin-left: 92vw;
 }
+
+@media (min-width: 768px) AND (max-width: 1291px){
+  .sidenavbar{
+    margin-top: 35vh;
+    position: fixed;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column-reverse;
+    margin-left: 87vw;
+  }
+  
+}
+
+@media (min-width:601px) AND (max-width: 767px){
+  .sidenavbar{
+    margin-top: 35vh;
+    position: fixed;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column-reverse;
+    margin-left: 84vw;
+  }
+  
+}
+
+@media(max-width: 600px){
+  .sidenavbar{
+    margin-top: 35vh;
+    position: fixed;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column-reverse;
+    margin-left: 79vw;
+  }
+  
+}
+
 #testimonallogo{
   font-size: 1.5vh;
 }
