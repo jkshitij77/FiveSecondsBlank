@@ -169,6 +169,7 @@ h3{
 .sidenavbar{
   margin-top: 35vh;
   position: fixed;
+  z-index: 1000;
   background-color: transparent;
   display: flex;
   flex-direction: column;
@@ -435,6 +436,7 @@ body::-webkit-scrollbar-thumb{
  .main_foot{
   width: 100vw;
   background-color: rgb(49, 45, 45);
+  
   color: white;
   font-size: medium;
   padding-top: 6vh;
@@ -449,6 +451,7 @@ body::-webkit-scrollbar-thumb{
 .container{
   padding: 0;
   margin: 0;
+  margin-left: 10%;
 }
 .footerh3{
   text-decoration-line: underline;
@@ -467,6 +470,16 @@ body::-webkit-scrollbar-thumb{
 h5{
   color: rgb(16, 255, 255);
 }
+.text-footer-tag-alt{
+  
+  font-size: 4vh;
+  margin-left: 30%;
+  font-weight: lighter;
+  font-style: italic;
+  margin-bottom: 5%;
+}
+
+
 /* 
 {-------------Meet the Team Section ----------------------} */
 .Collapsible__contentOuter{

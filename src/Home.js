@@ -227,7 +227,11 @@ class Home extends Component{
                       <p class="reducelineheight">lol@gmail.lol.com</p>
                       <br/>
                   </Col> 
+                  
       </Row>
+      <Row>
+                  <div class="text-footer-tag-alt">Site made and designed by TekTriad</div>
+                  </Row>
      
       </Container>
       </div>
