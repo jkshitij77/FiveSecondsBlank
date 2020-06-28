@@ -1,7 +1,13 @@
 .body{
   margin: 0;
   overflow: hidden;
+  background-color: lightsteelblue;
 }
+#Title{
+  margin-left: -2vh;
+}
+
+
 
 .brclass{
   height: 10vh;
@@ -74,12 +80,31 @@ a{
 .textInsideBanner{
   display: flex;
   flex-direction: column;
+  margin-left: 4vh;
 }
 
 .logo{
-  height: 50vh;
-  width: 50vh;
+  height: 70vh;
+  width: 70vh;
   border-radius: 50%;
+}
+@media (max-width: 768px){
+  .logo{
+    height: 25vh;
+    width: 25vh;
+    text-align: center;
+    flex: none;
+  }
+  .textInsideBanner{
+    
+    margin-left: -4vh;
+    font-size: x-small;
+    font-weight: 400;
+  }
+  #Title{
+    font-size: 4.95em;
+    margin-left: -2vh;
+  }
 }
 
 .logoSand{
@@ -430,6 +455,14 @@ h5{
   /* box-shadow: 3px 3px rgb(41, 40, 40); */
   font-size: .70em;
 }
+.Collapsible__trigger:hover{
+  margin-left: 38%;
+  width: 24%;
+  font-size: .95em;
+  background-color: #ff9dba;
+  box-shadow: 4px 6px black;
+
+}
 /* 
 {-------------Meet the Team Section Ends----------------------} */
 
@@ -437,4 +470,54 @@ h5{
   #KILLME{
     display: none;
   }
+}
+
+.logo-alt img{
+  height: 40%;
+  width: 40%;
+  margin-left: 30%;
+  margin-top: -3vh;
+  margin-bottom: -6vh;
+}
+@media (max-width: 768px){
+  .logo-alt img{
+    height: 60%;
+    width: 60%;
+    margin-left: 20%;
+    margin-top: -1vh;
+    margin-bottom: -3vh;
+  }
+  .text-banner-alt{
+
+    font-size: smaller;
+    line-height: 11vh;
+    line-height: 9vh;
+    text-align: center;
+  }
+  .text-banner-tag-alt{
+    font-size: 4vh;
+    text-align: center;
+    font-weight: lighter;
+    font-style: italic;
+  }
+}
+.text-banner-alt{
+  margin-top: -2vh;
+  font-size: 10vh;
+  text-align: center;
+  font-weight: 400;
+}
+.text-banner-tag-alt{
+  font-size: 7vh;
+  text-align: center;
+  font-weight: lighter;
+  font-style: italic;
+  margin-bottom: 5%;
+}
+.Container-class-alt-banner{
+  margin-left: 10%;
+  margin-top: 2%;
+  margin-right: 10%;
+  background-color: none;
+
 }

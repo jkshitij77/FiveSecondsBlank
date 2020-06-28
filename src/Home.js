@@ -62,7 +62,21 @@ class Home extends Component{
         <Link to="idClient" smooth={true} offset={-70} duration={500}> <img src={require("./customer-care.png")} alt="customer"></img></Link>
         <RouterLink to="/Contact"> <img src={require("./contactbruh.png")} alt="contactus"/></RouterLink>
       </div>      
-      
+        {/* Alternative Header and banner for the landing page */}
+          <div>
+          <div class="logosforside">
+          <a href="https://www.facebook.com/fivesecondsblank" target="_blank" rel="noopener noreferrer"><img src={require('./attachments/logos/facebook.png')} alt="facebooklogo"></img></a>
+          <a href="https://instagram.com/fivesecondsblank?igshid=1d0v0u5wn51h8" target="_blank" rel="noopener noreferrer"><img src={require('./attachments/logos/instagram.png')} alt="instagramlogo"></img></a>
+          <a href="https://www.youtube.com/channel/UCohxO9e4rpGaQG6XSEZyZFA" target="_blank" rel="noopener noreferrer"><img src={require('./attachments/logos/youtube.png')} alt="youtubelogo"></img></a>
+        </div>
+        <div class="Container-class-alt-banner">
+            <div class="logo-alt">
+            <img src={require("./attachments/logo.png")} alt="Logo" class="logo-alt"></img>
+            </div>
+          <div class="text-banner-alt">Five Seconds Blank</div>
+          <div class="text-banner-tag-alt">"feel scenarios blend"</div>
+        </div>
+        </div>
 
 
       {/* Header part is here We have our banner with the text and logo here */}
